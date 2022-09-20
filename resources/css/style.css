@@ -11,7 +11,7 @@ header{
     position: fixed;
     height: 90px;
     width: 100%;
-    background: #000000;
+    background: #ffffff;
     padding: 15px 30px;
     z-index: 9999;
 }
@@ -130,7 +130,7 @@ header{
     min-height: 100vh;
     position: fixed;
     left: 0;
-    background: #000000;
+    background: #ffffff;
     text-align: center;
     padding-top: 11px;
     z-index: 9999;
@@ -229,6 +229,9 @@ header{
 }
 .details__card--container{
     display: flex;
+    background: #f5e8e8;
+    padding: 20px;
+    border-radius: 6px;
 }
 .profile__card{
     min-width: calc(21% - 15px);
