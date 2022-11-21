@@ -1,6 +1,8 @@
-
+@font-face { font-family: 'Qanelas'; src: url("../fonts/QanelasSoft/QanelasSoftDEMO-UltraLight.otf"); }
+@font-face { font-family: 'Qanelas'; font-weight: bold; src: url("../fonts/QanelasSoft/QanelasSoftDEMO-ExtraBold.otf"); }
 :root{
     --red-color:red;
+    --bg-color: #F6ECE1;
 }
 *{
     padding: 0;
@@ -353,4 +355,190 @@ header{
     font-weight: 500;
     padding: 0;
     margin: 0;
+}
+
+/*====================================================*/
+
+.color__bg--section{
+    background: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+.signup__content--container{
+    height: 100%;
+    min-height: 516px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    padding: 40px;
+}
+.forget__content--container{
+    min-height: 439px !important;
+}
+.check__mail--container{
+    min-height: 305px !important;
+}
+.reset__content--container{
+    min-height: 453px !important;
+}
+.verification__mail--container{
+    min-height: 515px !important;
+}
+.signin__top--content h2{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F16532;
+}
+.signin__top--content img{
+    object-fit: contain;
+}
+.signup__content--container p{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #616161;
+    margin-bottom: 20px;
+}
+.signup__content--container h3{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+    color: #757575;
+}
+.each__input--container{
+    width: 100%;
+    height: 66px;
+    background: #FAFAFA;
+    border: 1px solid #F6ECE1;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+}
+.each__input--container label{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #616161;
+}
+.each__input--container input{
+    border: none;
+    outline: none;
+    background: #ffffffeb;
+}
+.each__input--container svg{
+    right: 24px;
+    bottom: 16px;
+}
+
+.forget__pass--container a{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px; color: #F16532;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign__in--btn{
+    padding: 12px 16px;
+    width: 100%;
+    height: 44px;
+    background: #F16532;
+    border-radius: 4px;
+    margin-top: 36px;
+    border: none;
+    outline: none;
+
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.c-hr{
+    border: 1px solid #F5F5F5;
+    width: 100%;
+}
+.reset__content--container p:nth-child(3){
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D84315;
+    margin-bottom: 0;
+}
+.password__strength--container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.password__strength--container .bar{
+    width: 104px;
+    height: 8px;
+    background: #D84315;
+    border-radius: 7px;
+}
+.password__strength--container span{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #757575;
+    padding-left: 8px;
+}
+.secondary__btn{
+    padding: 12px 16px;
+    width: 100%;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin-top: 36px;
+    border: 1px solid #f1653233;
+    outline: none;
+
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F16532;
+    margin-bottom: 24px;
+}
+.verification__mail--container p span{
+    font-family: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .signup__content--container{
+        margin: 3rem;
+    }
 }
