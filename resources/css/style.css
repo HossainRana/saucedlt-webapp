@@ -364,6 +364,7 @@ header{
     width: 100%;
     height: 100%;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 .signup__content--container{
     height: 100%;
@@ -527,18 +528,42 @@ header{
 .verification__mail--container p span{
     font-family: auto;
 }
-
-
-
-
-
-
-
+.input__group--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input__group--container input{
+    width: 77px;
+    height: 48px;
+    background: #FAFAFA;
+    border-radius: 12px;
+    border: navajowhite;
+    text-align: center;
+    outline: none;
+    margin: 0 12px;
+}
 
 
 
 @media (max-width: 768px) {
     .signup__content--container{
         margin: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .signin__top--content h2{
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+@media (max-width: 500px) {
+    .signin__top--content h2{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .input__group--container input{
+        width: 50px;
     }
 }
