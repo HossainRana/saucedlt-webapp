@@ -166,6 +166,16 @@ header{
     color: #7D7D7E;
     margin: 20px;
 }
+.profile__menu--container li a{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #7D7D7E;
+    margin: 20px;
+    text-decoration: none;
+}
 .profile__menu--container li h2{
     font-size: 14px;
     font-weight: 600;
@@ -241,7 +251,7 @@ header{
     color: var(--red-color);
     font-size: 20px;
 }
-.each__menu--item span{
+.each__menu--item span a{
     font-family: 'Qanelas';
     white-space: nowrap;
     font-style: normal;
@@ -250,6 +260,7 @@ header{
     line-height: 20px;
     color: var(--red-color);
     margin-left: 14px;
+    text-decoration: none;
 }
 .each__menu--item:hover span{
     color: var(--red-color);
@@ -307,7 +318,7 @@ header{
     cursor: pointer;
     margin-top: 20px;
 }
-.dropdown__menu--item span{
+.dropdown__menu--item span a{
     font-family: 'Qanelas';
     font-style: normal;
     font-weight: 500;
@@ -315,6 +326,7 @@ header{
     line-height: 20px;
     color: var(--red-color);
     margin-left: 11px;
+    text-decoration: none;
 }
 .dropdown__menu--item:hover svg path{
     fill: #FF7901;
@@ -325,16 +337,16 @@ header{
 .content-container{
     padding-top: 90px;
     background-color: #ffffff;
-    height: 100vh;
+    height: 100%;
     width: calc(100% - 260px);
-    /*width: 100%;*/
     margin-left: 260px;
 }
 .container-layout{
     background: #f5f5ff;
     border-radius: 12px 12px 0 0;
     margin-right: 22px;
-    padding: 22px;
+    padding: 22px 22px 80px;
+    min-height: calc(100vh - 140px);
     height: 100%;
 }
 @media (max-width: 1024px) {
@@ -404,6 +416,10 @@ header{
     }
     .form__group{
         margin-bottom: 20px;
+    }
+    .line__chart--container{
+        min-height: 100% !important;
+        margin-top: 56px !important;
     }
 }
 
@@ -1031,4 +1047,126 @@ header{
 }
 .match__password--alert svg{
     margin-right: 5px;
+}
+
+.bar__chart--container{
+    width: 100%;
+    min-height: 617px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 28px;
+}
+.line__chart--container{
+    width: 100%;
+    min-height: 617px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-top: 28px;
+    padding: 24px 16px;
+}
+.bar__chart--top{
+    padding: 24px 16px;
+}
+.chart__top--left p{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9E9E9E;
+    margin-bottom: 8px;
+}
+.chart__top--left h3{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #212121;
+}
+.chart__top--right{
+    background: #FAFAFA;
+    border: 1px solid #F5F5F5;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+.chart__top--right select{
+    background: #FAFAFA;
+    border: none;
+    width: 90px;
+    height: 48px;
+    outline: none;
+}
+.chart__top--right option{
+    border: none;
+    box-shadow: 0px 25px 50px rgb(0 0 0 / 25%);
+}
+.chart__bar{
+    padding: 24px 16px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.chart__container{
+    padding-bottom: 21px;
+}
+.line__chart--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line__chart--top h3{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #212121;
+}
+.chart__bg{
+    margin-top: 20px;
+    width: 100%;
+    height: 141px;
+    background: #F6ECE1;
+    border-radius: 12px;
+}
+#myChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+.chart__bg span{
+    position: absolute;
+}
+.line__heading{
+    font-family: 'Qanelas Soft';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5E35B1;
+    top: 17px;
+    left: 16px;
+}
+.line__per{
+    font-family: 'Qanelas Soft';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #616161;
+    top: 42px;
+    left: 16px;
+}
+.line_amount{
+    font-family: 'Qanelas Soft';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #616161;
+    top: 21px;
+    right: 21px;
 }
