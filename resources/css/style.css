@@ -231,7 +231,7 @@ header{
 .left__menu--items{
     height: calc(100vh - 60px);
     overflow-y: scroll;
-    padding: 14px;
+    padding: 2px;
 }
 .left__menu--container > img{
     margin-left: 14px;
@@ -241,17 +241,17 @@ header{
     align-items: center;
     justify-content: left;
     cursor: pointer;
-    margin-top: 24px;
+    margin-top: 16px;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition:all 0.5s ease-in-out;
     -o-transition:all 0.5s ease-in-out;
     transition:all 0.5s ease-in-out;
+    /*padding: 12px;*/
 }
-.each__menu--item i{
-    color: var(--red-color);
-    font-size: 20px;
+.each__menu--item a svg{
+    margin-right: 16px;
 }
-.each__menu--item span a{
+.each__menu--item a{
     font-family: 'Qanelas';
     white-space: nowrap;
     font-style: normal;
@@ -259,8 +259,9 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: var(--red-color);
-    margin-left: 14px;
     text-decoration: none;
+    padding: 12px;
+    width: 100%;
 }
 .each__menu--item:hover span{
     color: var(--red-color);
@@ -421,6 +422,9 @@ header{
         min-height: 100% !important;
         margin-top: 56px !important;
     }
+    .payroll__tab--container h2{
+        font-size: 27px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -449,6 +453,9 @@ header{
     .header__profile--container{
         width: auto;
     }
+    .payroll__tab--container h2{
+        font-size: 20px !important;
+    }
 }
 @media (max-width: 400px) {
     .header__profile--balance span{
@@ -456,6 +463,9 @@ header{
     }
     .header__profile--container{
         width: auto;
+    }
+    .payroll__tab--container h2{
+        font-size: 17px !important;
     }
 }
 .breadcums{
@@ -1095,7 +1105,7 @@ header{
 .chart__top--right select{
     background: #FAFAFA;
     border: none;
-    width: 90px;
+    width: 100%;
     height: 48px;
     outline: none;
 }
@@ -1170,3 +1180,152 @@ header{
     top: 21px;
     right: 21px;
 }
+.sidebar__active{
+    background: #F6ECE1;
+    border-radius: 15px;
+}
+.active_breadcrumb{
+    color: var(--red-color);
+}
+
+
+/*Payroll*/
+
+
+.payroll__tab--container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 13px 16px 0 16px;
+}
+.payroll__tab--container h2{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    color: #212121;
+    margin-bottom: 57px;
+}
+#payroll-nav .nav-tabs{
+    border: none;
+}
+#payroll-nav .nav-link{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #616161;
+    border: none;
+    outline: none;
+}
+#payroll-nav .nav-link:hover{
+    border: none;
+    color: var(--red-color);
+}
+#payroll-nav .nav-link:hover svg path{
+    fill: var(--red-color);
+}
+#payroll-nav svg{
+    margin-right: 15px;
+}
+#payroll-nav .nav-link.active{
+    color: var(--red-color);
+}
+#payroll-nav .nav-link.active svg path{
+    fill: var(--red-color);
+}
+#payroll-nav .nav-link::after{
+    content: '';
+    width: 100%;
+    display: block;
+    background: transparent;
+    height: 2px;
+    position: relative;
+    top: 9px;
+}
+#payroll-nav .nav-link.active::after{
+    content: '';
+    width: 100%;
+    display: block;
+    background: var(--red-color);
+    height: 2px;
+    position: relative;
+    top: 9px;
+}
+.payroll__search--container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+.csv__download--btn{
+    border: none;
+    outline: none;
+    font-family: 'Qanelas Soft';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F16532;
+    padding: 12px 14px;
+    width: fit-content;
+    border: 1px solid #F16532;
+    border-radius: 4px;
+    background: transparent;
+}
+.payroll__search{
+    width: 100%;
+    background: #FAFAFA;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+}
+.payroll__search svg{
+    margin-right: 8px;
+}
+.payroll__search input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.payroll__search input::placeholder{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;color: #616161;
+}
+.payroll__filter--container{
+    justify-content: space-between;
+    align-items: center;
+}
+.payroll__filter--bg{
+    background: var(--red-color) !important;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
