@@ -1260,6 +1260,7 @@ header{
     width: 100%;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .csv__download--btn{
     border: none;
@@ -1307,15 +1308,67 @@ header{
     background: var(--red-color) !important;
     color: #FFFFFF;
 }
+.payroll__table--container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+}
+.table__heading{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #212121;
+    margin-bottom: 24px;
+}
+.payroll__table thead tr th{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9E9E9E;
+}
+.payroll__table tbody tr td{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
 
-
-
-
-
-
-
-
-
+#all-payroll > table > tbody > tr > td:nth-child(8){
+    font-family: auto;
+    color: #21212194;
+}
+#all-payroll > table > tbody > tr > td:nth-child(9){
+    font-family: auto;
+    color: #21212194;
+}
+#all-payroll > table > tbody > tr > td:nth-child(4){
+    font-family: auto;
+    color: #21212194;
+}
+.detail__edited{
+    padding: 4px 10px;
+    background: #FBE9E7;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+}
+.action__btn{
+    padding: 12px;
+    border: 1px solid #F16532;
+    border-radius: 4px;
+}
+.action__btn svg{
+    background: #FBD1C2;
+}
 
 
 
