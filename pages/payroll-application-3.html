@@ -219,78 +219,104 @@
 
         <!--            Page Content            -->
 
-        <div class="employee__details--container">
-            <!--Tab pills-->
-
-            <nav id="payroll-nav">
-                <div class="nav nav-tabs d-flex justify-content-between" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#all-payroll" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 14H12V16H4V14ZM4 10H12V12H4V10ZM10 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM14 18H2V2H9V7H14V18Z" fill="#F16532"/>
-                        </svg>
-                        Application
-                    </button>
-                    <a href="#" class="enter__payroll">
-                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.49991 11.1698L2.32991 6.99984L0.909912 8.40984L6.49991 13.9998L18.4999 1.99984L17.0899 0.589844L6.49991 11.1698Z" fill="#F6ECE1"/>
-                        </svg>
-                        Enter into Payroll
-                    </a>
-                </div>
-                <div class="c-border"></div>
-                <div class="details__container">
-                    <h3>Kadin Press</h3>
-                    <div class="c-border"></div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-12">
-                            <div class="personal__details--container">
-                                <h4>Personal Details</h4>
-                                <p><label>First name :</label><span>Kadin</span></p>
-                                <p><label>Last name :</label><span>Press</span></p>
-                                <p><label>Email  :</label><span>kadin.press@gmail.com</span></p>
-                                <p><label>Mobile  :3</label><span>61+ 412 123 12</span></p>
-                                <p><label>Date of birth :</label><span>12/12/1990</span></p>
-                                <p><label>Address line 1 :</label><span>123 Walton Road</span></p>
-                                <p><label>Address line 2 :</label><span>Kadin</span></p>
-                                <p><label>City :</label><span>Sydney</span></p>
-                                <p><label>Country :</label><span>Australia</span></p>
-                                <p><label>Postcode :</label><span>2134</span></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-7 col-12">
-                            <div class="personal__details--container">
-                                <h4>Job Details</h4>
-                                <p><label>Business :</label><span>CrackerJack Hospitality</span></p>
-                                <p><label>Occupation :</label><span>Barista</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="details__container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-12">
-                            <div class="personal__details--container">
-                                <h4>Legal documents</h4>
-                                <p><label>Tax File Number :</label><span>12 2132 1321</span></p>
-                                <p><label>Superfund Name :</label><span>Rest Super</span></p>
-                                <p><label>Superfund Type :</label><span>Superfund</span></p>
-                                <p><label>Membership Number :</label><span>1346314 21346513</span></p>
-                                <p><label>ABN  :</label><span>12 642134 5465</span></p>
-                                <p><label>USI  :</label><span>5415 151321 454</span></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-7 col-12">
-                            <div class="personal__details--container">
-                                <h4>Job Details</h4>
-                                <p><label>Name of Bank :</label><span>12/12/1990</span></p>
-                                <p><label>Bank Account Name :</label><span>12/12/1990</span></p>
-                                <p><label>Bank Account Number :</label><span>12/12/1990</span></p>
-                                <p><label>BSB :</label><span>12/12/1990</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <div class="employee__details--form">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Please enter and confirm the details below before syncing with payroll.</h2>
+                <a href="#" class="enter__payroll">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49991 11.1698L2.32991 6.99984L0.909912 8.40984L6.49991 13.9998L18.4999 1.99984L17.0899 0.589844L6.49991 11.1698Z" fill="#F6ECE1"/>
+                    </svg>
+                    Sync with Deputy
+                </a>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Award Name</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Employment Agreement</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Time Sheets</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Prime Location</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Sub Location</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Pay Rate Template</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Pay Schedule</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Payment Type</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Pay Rate</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Standard work week</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
+            <div class="each__detail--input">
+                <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                <br>
+                <label for='userId' class='label'>Hours Per Day</label>
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
+                </svg>
+            </div>
         </div>
     </div>
 

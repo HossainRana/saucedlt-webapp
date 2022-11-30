@@ -1479,10 +1479,146 @@ header{
 #uploaded-payroll > table > tbody > tr{
     vertical-align: middle;
 }
+.employee__details--container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.enter__payroll{
+    background: #F16532;
+    border-radius: 5px;
+    padding: 7px 16px;
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.c-border{
+    width: 100%;
+    border-bottom: 1px solid #F6ECE1;
+    margin-top: 11px;
+}
 
-
-
-
-
-
-
+.employee__details--container #payroll-nav .nav-link.active::after{
+    content: '';
+    width: 100%;
+    display: block;
+    background: var(--red-color);
+    height: 2px;
+    position: relative;
+    top: 19px;
+}
+.details__container{
+    margin-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #F6ECE1;
+    border-radius: 12px;
+}
+.details__container h3{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    margin-bottom: 15px;
+    padding: 20px 16px 0 16px;
+}
+#payroll-nav > div.details__container > div{
+    margin-top: 0;
+}
+#payroll-nav > div.details__container > div.row{
+    padding: 20px 16px;
+}
+.personal__details--container h4{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+    margin-bottom: 30px;
+}
+.personal__details--container p{
+    margin-bottom: 7px;
+}
+.personal__details--container label{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(33, 33, 33, 1);
+}
+.personal__details--container span{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(97, 97, 97, 1);
+}
+.employee__details--form{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.employee__details--form h2{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    margin-bottom: 36px;
+}
+.each__detail--input{
+    width: 474px;
+    position: relative;
+}
+.each__detail--input .label {
+    position: absolute;
+    transform: translate(1.2rem, -3.4rem);
+    font-size: 1rem;
+    padding: 0 5px;
+    background-color: #fcffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #9E9E9E;
+}
+.each__detail--input .textarea {
+    position: relative;
+    margin-top: 2rem;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 12px;
+    width: 474px;
+    height: 3rem;
+    padding: 0rem 1rem;
+    font-size: 1.4rem;
+}
+.each__detail--input .textarea:focus {
+    outline: none;
+}
+.each__detail--input input::placeholder{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
+.each__detail--input svg{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
