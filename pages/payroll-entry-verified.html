@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap"
+            rel="stylesheet"
+    />
+    <!--      Bootstrap     -->
+
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="../resources/css/bootstrap-utilities.min.css"/>
+    <link rel="stylesheet" href="../resources/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="../resources/css/style.css"/>
+
+    <!--Bootstrap JS-->
+    <script src="../resources/js/jquery.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="../resources/js/bootstrap.bundle.min.js"></script>
+    <script src="../resources/js/site.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+<!--Header Section-->
+<header>
+    <div class="menu__bar" id="navBar">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
+    </div>
+    <div class="header__profile--container">
+        <div class="header__business--profile">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM8.99 17.93C5.06 17.43 2 14.07 2 10C2 9.39 2.08 8.79 2.21 8.22L6.99 13V14C6.99 15.1 7.89 16 8.99 16V17.93ZM15.89 15.4C15.63 14.59 14.89 14 13.99 14H12.99V11C12.99 10.45 12.54 10 11.99 10H5.99V8H7.99C8.54 8 8.99 7.55 8.99 7V5H10.99C12.09 5 12.99 4.1 12.99 3V2.59C15.92 3.77 18 6.65 18 10C18 12.08 17.19 13.98 15.89 15.4Z"
+                      fill="#F16532"/>
+            </svg>
+            <div>
+                <h2>Business Profiles</h2>
+                <p>Cracker JAck Hospitality</p>
+            </div>
+            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.59 0.593018L6 5.17302L1.41 0.593018L0 2.00302L6 8.00302L12 2.00302L10.59 0.593018Z"
+                      fill="#F6ECE1"/>
+            </svg>
+        </div>
+        <div class="header__right--container">
+            <div class="chat__notification">
+                <img class="img-fluid" src="../resources/images/icons/notification.png" alt="notification">
+            </div>
+            <div class="header__profile--details" id="profile">
+                <img src="../resources/images/profile.png" alt="profile"/>
+                <i class="fa fa-cog"></i>
+            </div>
+        </div>
+        <ul class="profile__menu--container menu__show" id="profileMenu">
+            <li>
+                <h2>Good Morning, Krishna</h2>
+                <p>Prject Admin</p>
+            </li>
+            <li><i class="fa fa-user-o"></i><a href="./account-settings.html">Account Settings</a></li>
+            <li class="log__out--menu">
+                <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M11.25 3C11.25 2.80109 11.329 2.61032 11.4697 2.46967C11.6103 2.32902 11.8011 2.25 12 2.25L16 2.25C17.2593 2.25159 18.4666 2.75254 19.357 3.643C20.2475 4.53345 20.7484 5.74071 20.75 7L20.75 17C20.7484 18.2593 20.2475 19.4665 19.357 20.357C18.4665 21.2475 17.2593 21.7484 16 21.75L12 21.75C11.8011 21.75 11.6103 21.671 11.4697 21.5303C11.329 21.3897 11.25 21.1989 11.25 21C11.25 20.8011 11.329 20.6103 11.4697 20.4697C11.6103 20.329 11.8011 20.25 12 20.25L16 20.25C16.8616 20.2489 17.6877 19.9062 18.2969 19.2969C18.9062 18.6877 19.2489 17.8616 19.25 17L19.25 7C19.2489 6.13837 18.9062 5.31234 18.2969 4.70307C17.6877 4.09381 16.8616 3.75106 16 3.75L12 3.75C11.8011 3.75 11.6103 3.67098 11.4697 3.53033C11.329 3.38968 11.25 3.19891 11.25 3ZM3.47 12.53L7.47 16.53C7.53922 16.6016 7.622 16.6587 7.71353 16.698C7.80505 16.7372 7.90347 16.7579 8.00306 16.7587C8.10264 16.7595 8.20139 16.7405 8.29355 16.7027C8.3857 16.665 8.46941 16.6092 8.5398 16.5388C8.61018 16.4683 8.66583 16.3846 8.7035 16.2924C8.74117 16.2002 8.7601 16.1014 8.75919 16.0018C8.75827 15.9023 8.73754 15.8039 8.69819 15.7124C8.65884 15.6209 8.60167 15.5382 8.53 15.469L5.811 12.75L14 12.75C14.1989 12.75 14.3897 12.671 14.5303 12.5303C14.671 12.3897 14.75 12.1989 14.75 12C14.75 11.8011 14.671 11.6103 14.5303 11.4697C14.3897 11.329 14.1989 11.25 14 11.25L5.811 11.25L8.53 8.53C8.66669 8.38861 8.74237 8.1992 8.74076 8.00255C8.73914 7.8059 8.66036 7.61775 8.52136 7.47863C8.38237 7.33951 8.1943 7.26054 7.99765 7.25874C7.80101 7.25694 7.61152 7.33244 7.47 7.469L3.47 11.469C3.40031 11.5386 3.34502 11.6213 3.3073 11.7124C3.26958 11.8034 3.25016 11.901 3.25016 11.9995C3.25016 12.098 3.26958 12.1956 3.3073 12.2866C3.34502 12.3776 3.40031 12.4603 3.47 12.53Z"
+                            fill="#FF5E5E"
+                    />
+                </svg>
+                <span><a href="../index.html">Log Out</a></span>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="content">
+    <!--Left Menu-->
+    <div class="left__menu--container navmenu__show" id="leftMenu">
+        <img src="../resources/images/logo/logo.png" alt="logo"/>
+        <ul class="left__menu--items">
+            <li class="each__menu--item">
+                <a href="./dashboard.html">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM8.99 17.93C5.06 17.43 2 14.07 2 10C2 9.39 2.08 8.79 2.21 8.22L6.99 13V14C6.99 15.1 7.89 16 8.99 16V17.93ZM15.89 15.4C15.63 14.59 14.89 14 13.99 14H12.99V11C12.99 10.45 12.54 10 11.99 10H5.99V8H7.99C8.54 8 8.99 7.55 8.99 7V5H10.99C12.09 5 12.99 4.1 12.99 3V2.59C15.92 3.77 18 6.65 18 10C18 12.08 17.19 13.98 15.89 15.4Z"
+                              fill="#F16532"/>
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+            <li class="each__menu--item sidebar__active">
+                <a class="sidebar__active" href="./payroll-entries.html">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3 9.22C11.8336 8.75813 12.2616 8.18688 12.5549 7.54502C12.8482 6.90316 13 6.20571 13 5.5C13 4.17392 12.4732 2.90215 11.5355 1.96447C10.5979 1.02678 9.32608 0.5 8 0.5C6.67392 0.5 5.40215 1.02678 4.46447 1.96447C3.52678 2.90215 3 4.17392 3 5.5C2.99999 6.20571 3.1518 6.90316 3.44513 7.54502C3.73845 8.18688 4.16642 8.75813 4.7 9.22C3.30014 9.85388 2.11247 10.8775 1.27898 12.1685C0.445495 13.4596 0.00147185 14.9633 0 16.5C0 16.7652 0.105357 17.0196 0.292893 17.2071C0.48043 17.3946 0.734784 17.5 1 17.5C1.26522 17.5 1.51957 17.3946 1.70711 17.2071C1.89464 17.0196 2 16.7652 2 16.5C2 14.9087 2.63214 13.3826 3.75736 12.2574C4.88258 11.1321 6.4087 10.5 8 10.5C9.5913 10.5 11.1174 11.1321 12.2426 12.2574C13.3679 13.3826 14 14.9087 14 16.5C14 16.7652 14.1054 17.0196 14.2929 17.2071C14.4804 17.3946 14.7348 17.5 15 17.5C15.2652 17.5 15.5196 17.3946 15.7071 17.2071C15.8946 17.0196 16 16.7652 16 16.5C15.9985 14.9633 15.5545 13.4596 14.721 12.1685C13.8875 10.8775 12.6999 9.85388 11.3 9.22ZM8 8.5C7.40666 8.5 6.82664 8.32405 6.33329 7.99441C5.83994 7.66476 5.45542 7.19623 5.22836 6.64805C5.0013 6.09987 4.94189 5.49667 5.05764 4.91473C5.1734 4.33279 5.45912 3.79824 5.87868 3.37868C6.29824 2.95912 6.83279 2.6734 7.41473 2.55764C7.99667 2.44189 8.59987 2.5013 9.14805 2.72836C9.69623 2.95542 10.1648 3.33994 10.4944 3.83329C10.8241 4.32664 11 4.90666 11 5.5C11 6.29565 10.6839 7.05871 10.1213 7.62132C9.55871 8.18393 8.79565 8.5 8 8.5ZM17.74 8.82C18.38 8.09933 18.798 7.20905 18.9438 6.25634C19.0896 5.30362 18.9569 4.32907 18.5618 3.45C18.1666 2.57093 17.5258 1.8248 16.7165 1.30142C15.9071 0.77805 14.9638 0.499742 14 0.5C13.7348 0.5 13.4804 0.605357 13.2929 0.792893C13.1054 0.98043 13 1.23478 13 1.5C13 1.76522 13.1054 2.01957 13.2929 2.20711C13.4804 2.39464 13.7348 2.5 14 2.5C14.7956 2.5 15.5587 2.81607 16.1213 3.37868C16.6839 3.94129 17 4.70435 17 5.5C16.9986 6.02524 16.8593 6.5409 16.5961 6.99542C16.3328 7.44994 15.9549 7.82738 15.5 8.09C15.3517 8.17552 15.2279 8.29766 15.1404 8.44474C15.0528 8.59182 15.0045 8.7589 15 8.93C14.9958 9.09976 15.0349 9.2678 15.1137 9.41826C15.1924 9.56872 15.3081 9.69665 15.45 9.79L15.84 10.05L15.97 10.12C17.1754 10.6917 18.1923 11.596 18.901 12.7263C19.6096 13.8566 19.9805 15.1659 19.97 16.5C19.97 16.7652 20.0754 17.0196 20.2629 17.2071C20.4504 17.3946 20.7048 17.5 20.97 17.5C21.2352 17.5 21.4896 17.3946 21.6771 17.2071C21.8646 17.0196 21.97 16.7652 21.97 16.5C21.9782 14.9654 21.5938 13.4543 20.8535 12.1101C20.1131 10.7659 19.0413 9.63331 17.74 8.82Z"
+                              fill="#F16532"/>
+                    </svg>
+                    Payroll Entries
+                </a>
+            </li>
+            <li class="each__menu--item">
+                <a href="#">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3 9.22C11.8336 8.75813 12.2616 8.18688 12.5549 7.54502C12.8482 6.90316 13 6.20571 13 5.5C13 4.17392 12.4732 2.90215 11.5355 1.96447C10.5979 1.02678 9.32608 0.5 8 0.5C6.67392 0.5 5.40215 1.02678 4.46447 1.96447C3.52678 2.90215 3 4.17392 3 5.5C2.99999 6.20571 3.1518 6.90316 3.44513 7.54502C3.73845 8.18688 4.16642 8.75813 4.7 9.22C3.30014 9.85388 2.11247 10.8775 1.27898 12.1685C0.445495 13.4596 0.00147185 14.9633 0 16.5C0 16.7652 0.105357 17.0196 0.292893 17.2071C0.48043 17.3946 0.734784 17.5 1 17.5C1.26522 17.5 1.51957 17.3946 1.70711 17.2071C1.89464 17.0196 2 16.7652 2 16.5C2 14.9087 2.63214 13.3826 3.75736 12.2574C4.88258 11.1321 6.4087 10.5 8 10.5C9.5913 10.5 11.1174 11.1321 12.2426 12.2574C13.3679 13.3826 14 14.9087 14 16.5C14 16.7652 14.1054 17.0196 14.2929 17.2071C14.4804 17.3946 14.7348 17.5 15 17.5C15.2652 17.5 15.5196 17.3946 15.7071 17.2071C15.8946 17.0196 16 16.7652 16 16.5C15.9985 14.9633 15.5545 13.4596 14.721 12.1685C13.8875 10.8775 12.6999 9.85388 11.3 9.22ZM8 8.5C7.40666 8.5 6.82664 8.32405 6.33329 7.99441C5.83994 7.66476 5.45542 7.19623 5.22836 6.64805C5.0013 6.09987 4.94189 5.49667 5.05764 4.91473C5.1734 4.33279 5.45912 3.79824 5.87868 3.37868C6.29824 2.95912 6.83279 2.6734 7.41473 2.55764C7.99667 2.44189 8.59987 2.5013 9.14805 2.72836C9.69623 2.95542 10.1648 3.33994 10.4944 3.83329C10.8241 4.32664 11 4.90666 11 5.5C11 6.29565 10.6839 7.05871 10.1213 7.62132C9.55871 8.18393 8.79565 8.5 8 8.5ZM17.74 8.82C18.38 8.09933 18.798 7.20905 18.9438 6.25634C19.0896 5.30362 18.9569 4.32907 18.5618 3.45C18.1666 2.57093 17.5258 1.8248 16.7165 1.30142C15.9071 0.77805 14.9638 0.499742 14 0.5C13.7348 0.5 13.4804 0.605357 13.2929 0.792893C13.1054 0.98043 13 1.23478 13 1.5C13 1.76522 13.1054 2.01957 13.2929 2.20711C13.4804 2.39464 13.7348 2.5 14 2.5C14.7956 2.5 15.5587 2.81607 16.1213 3.37868C16.6839 3.94129 17 4.70435 17 5.5C16.9986 6.02524 16.8593 6.5409 16.5961 6.99542C16.3328 7.44994 15.9549 7.82738 15.5 8.09C15.3517 8.17552 15.2279 8.29766 15.1404 8.44474C15.0528 8.59182 15.0045 8.7589 15 8.93C14.9958 9.09976 15.0349 9.2678 15.1137 9.41826C15.1924 9.56872 15.3081 9.69665 15.45 9.79L15.84 10.05L15.97 10.12C17.1754 10.6917 18.1923 11.596 18.901 12.7263C19.6096 13.8566 19.9805 15.1659 19.97 16.5C19.97 16.7652 20.0754 17.0196 20.2629 17.2071C20.4504 17.3946 20.7048 17.5 20.97 17.5C21.2352 17.5 21.4896 17.3946 21.6771 17.2071C21.8646 17.0196 21.97 16.7652 21.97 16.5C21.9782 14.9654 21.5938 13.4543 20.8535 12.1101C20.1131 10.7659 19.0413 9.63331 17.74 8.82Z"
+                              fill="#F16532"/>
+                    </svg>
+                    Employees
+                </a>
+            </li>
+            <li class="each__menu--item dropdown__menu" id="dropdown">
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM8.99 17.93C5.06 17.43 2 14.07 2 10C2 9.39 2.08 8.79 2.21 8.22L6.99 13V14C6.99 15.1 7.89 16 8.99 16V17.93ZM15.89 15.4C15.63 14.59 14.89 14 13.99 14H12.99V11C12.99 10.45 12.54 10 11.99 10H5.99V8H7.99C8.54 8 8.99 7.55 8.99 7V5H10.99C12.09 5 12.99 4.1 12.99 3V2.59C15.92 3.77 18 6.65 18 10C18 12.08 17.19 13.98 15.89 15.4Z"
+                              fill="#F16532"/>
+                    </svg>
+                    Job Listings
+                </a>
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M1 1L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13 1"
+                            stroke="#7D7D7E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                    />
+                </svg>
+            </li>
+            <li class="dropdown__menu--items menu__show position-relative" id="dropdownMenu">
+                <div class="position-absolute left__border--line"></div>
+                <ul>
+                    <li class="dropdown__menu--item">
+                        <span><a href="#">Active</a></span>
+                    </li>
+                    <li class="dropdown__menu--item">
+                        <span><a href="#">Draft</a></span>
+                    </li>
+                    </li>
+                    <li class="dropdown__menu--item">
+                        <span><a href="#">Archived</a></span>
+                    </li>
+                </ul>
+            </li>
+            <li class="each__menu--item">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5508_6289)">
+                            <path d="M17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3Z"
+                                  stroke="#F16532" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 7H15" stroke="#F16532" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9 11H15" stroke="#F16532" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M9 15H13" stroke="#F16532" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5508_6289">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Event Register
+                </a>
+            </li>
+            <li class="each__menu--item menu__item--active">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5508_6298)">
+                            <path opacity="0.3"
+                                  d="M14 17.5H14.5V17V15V14.5H14H7H6.5V15V17V17.5H7H14ZM17 13.5H17.5V13V11V10.5H17H7H6.5V11V13V13.5H7H17ZM17 9.5H17.5V9V7V6.5H17H7H6.5V7V9V9.5H7H17ZM18.5 18.5H5.5V5.5H18.5V18.5Z"
+                                  fill="#F16532" stroke="#F16532"/>
+                            <path d="M7 15H14V17H7V15ZM7 11H17V13H7V11ZM7 7H17V9H7V7ZM19 3H14.82C14.4 1.84 13.3 1 12 1C10.7 1 9.6 1.84 9.18 3H5C4.86 3 4.73 3.01 4.6 3.04C4.21 3.12 3.86 3.32 3.59 3.59C3.41 3.77 3.26 3.99 3.16 4.23C3.06 4.47 3 4.72 3 5V19C3 19.27 3.06 19.54 3.16 19.78C3.26 20.02 3.41 20.23 3.59 20.42C3.86 20.69 4.21 20.89 4.6 20.97C4.73 20.99 4.86 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 2.75C12.41 2.75 12.75 3.09 12.75 3.5C12.75 3.91 12.41 4.25 12 4.25C11.59 4.25 11.25 3.91 11.25 3.5C11.25 3.09 11.59 2.75 12 2.75ZM19 19H5V5H19V19Z"
+                                  fill="#F16532"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5508_6298">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Performance Management
+                </a>
+            </li>
+            <li class="each__menu--item">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5508_6298)">
+                            <path opacity="0.3"
+                                  d="M14 17.5H14.5V17V15V14.5H14H7H6.5V15V17V17.5H7H14ZM17 13.5H17.5V13V11V10.5H17H7H6.5V11V13V13.5H7H17ZM17 9.5H17.5V9V7V6.5H17H7H6.5V7V9V9.5H7H17ZM18.5 18.5H5.5V5.5H18.5V18.5Z"
+                                  fill="#F16532" stroke="#F16532"/>
+                            <path d="M7 15H14V17H7V15ZM7 11H17V13H7V11ZM7 7H17V9H7V7ZM19 3H14.82C14.4 1.84 13.3 1 12 1C10.7 1 9.6 1.84 9.18 3H5C4.86 3 4.73 3.01 4.6 3.04C4.21 3.12 3.86 3.32 3.59 3.59C3.41 3.77 3.26 3.99 3.16 4.23C3.06 4.47 3 4.72 3 5V19C3 19.27 3.06 19.54 3.16 19.78C3.26 20.02 3.41 20.23 3.59 20.42C3.86 20.69 4.21 20.89 4.6 20.97C4.73 20.99 4.86 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 2.75C12.41 2.75 12.75 3.09 12.75 3.5C12.75 3.91 12.41 4.25 12 4.25C11.59 4.25 11.25 3.91 11.25 3.5C11.25 3.09 11.59 2.75 12 2.75ZM19 19H5V5H19V19Z"
+                                  fill="#F16532"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5508_6298">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Jobs Board
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content-container">
+    <div class="container-layout">
+        <div class="breadcums">
+            <h3>Payroll entries&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<span class="active_breadcrumb">Verified</span></h3>
+        </div>
+
+
+        <!--            Page Content            -->
+
+        <div class="payroll__tab--container">
+            <h2>CrackerJack Hospitality</h2>
+
+            <!--Tab pills-->
+
+            <nav id="payroll-nav">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#pending-payroll" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5001 2.99018L18.0301 16.0002H2.97012L10.5001 2.99018ZM1.24012 15.0002C0.470121 16.3302 1.43012 18.0002 2.97012 18.0002H18.0301C19.5701 18.0002 20.5301 16.3302 19.7601 15.0002L12.2301 1.99018C11.4601 0.660176 9.54012 0.660176 8.77012 1.99018L1.24012 15.0002ZM9.50012 8.00018V10.0002C9.50012 10.5502 9.95012 11.0002 10.5001 11.0002C11.0501 11.0002 11.5001 10.5502 11.5001 10.0002V8.00018C11.5001 7.45018 11.0501 7.00018 10.5001 7.00018C9.95012 7.00018 9.50012 7.45018 9.50012 8.00018ZM9.50012 13.0002H11.5001V15.0002H9.50012V13.0002Z" fill="#616161"/>
+                        </svg>
+                        Pending
+                    </button>
+                    <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#uploaded-payroll"" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.49991 11.1698L2.32991 6.99984L0.909912 8.40984L6.49991 13.9998L18.4999 1.99984L17.0899 0.589844L6.49991 11.1698Z" fill="#757575"/>
+                    </svg>
+                    Uploaded
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!--Search Action-->
+
+        <div class="payroll__search--container">
+            <div class="row m-0">
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="row m-0">
+                        <div class="col-lg-12 col-md-12 col-10 p-0">
+                            <div class="payroll__search">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33326 7.33326H7.8066L7.61993 7.15326C8.41993 6.21993 8.83326 4.9466 8.6066 3.59326C8.29326 1.73993 6.7466 0.259929 4.87993 0.0332621C2.05993 -0.313405 -0.313405 2.05993 0.0332621 4.87993C0.259929 6.74659 1.73993 8.29326 3.59326 8.6066C4.9466 8.83326 6.21993 8.41993 7.15326 7.61993L7.33326 7.80659V8.33326L10.1666 11.1666C10.4399 11.4399 10.8866 11.4399 11.1599 11.1666C11.4333 10.8933 11.4333 10.4466 11.1599 10.1733L8.33326 7.33326ZM4.33326 7.33326C2.67326 7.33326 1.33326 5.99326 1.33326 4.33326C1.33326 2.67326 2.67326 1.33326 4.33326 1.33326C5.99326 1.33326 7.33326 2.67326 7.33326 4.33326C7.33326 5.99326 5.99326 7.33326 4.33326 7.33326Z" fill="#616161"/>
+                                </svg>
+                                <input type="text" name="search" id="payroll-search" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 mt-lg-0 mt-sm-4">
+                    <div class="row payroll__filter--container m-0 justify-content-end">
+                        <div class="col-lg-4 col-md-4 col-4 ps-0">
+                            <div class="btn__jobs">Jobs</div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4 ps-0">
+                            <div class="btn__sync">Sync Type</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payroll__table--container">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade" id="pending-payroll" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h3 class="table__heading">List</h3>
+                    <table class="table table-borderless payroll__table">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" name="">
+                            </th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Occupation</th>
+                            <th scope="col">Sync Type</th>
+                            <th scope="col">Sync Status</th>
+                            <th scope="col">Payroll Entry Status</th>
+                            <th scope="col">Payroll Entry Date</th>
+                            <th scope="col">Details Changed</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Talan</td>
+                            <td>Saris</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Uploaded</td>
+                            <td>Uploaded</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Maren</td>
+                            <td>George</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Uploaded</td>
+                            <td>Uploaded</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Makenna</td>
+                            <td>Saris</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Pending</td>
+                            <td>Pending</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Phillip</td>
+                            <td>Levin</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Uploaded</td>
+                            <td>Uploaded</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                                <span class="action__btn sync__payroll">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                    </svg>
+                                    <div class="payroll__sync--container">
+                                        <ul>
+                                            <li>Sync with Payroll</li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Gretchen</td>
+                            <td>Schleifer</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Uploaded</td>
+                            <td>Uploaded</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Wilson</td>
+                            <td>Aminoff</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Pending</td>
+                            <td>Pending</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Erin</td>
+                            <td>Korsgaard</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Uploaded</td>
+                            <td>Uploaded</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn recent__invitation">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                    </svg>
+                                    <div class="invitation__recent--container">
+                                        <ul>
+                                            <li>Resent invitation</li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Emerson</td>
+                            <td>Passaquindici</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Pending</td>
+                            <td>Pending</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Phillip</td>
+                            <td>Rosser</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Pending</td>
+                            <td>Pending</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="d-flex">
+                                    <span class="action__btn mx-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                                <span class="action__btn">
+                                        <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                        </svg>
+                                    </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Emerson</td>
+                            <td>Rhiel Madsen</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Barista</td>
+                            <td>KeyPay</td>
+                            <td>Pending</td>
+                            <td>Pending</td>
+                            <td>15/02/2021</td>
+                            <td>
+                                <spsn class="detail__edited" data-toggle="tooltip" data-placement="top" title="Detail has been edited">
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.1875 0C2.4275 0 0.1875 2.24 0.1875 5C0.1875 7.76 2.4275 10 5.1875 10C7.9475 10 10.1875 7.76 10.1875 5C10.1875 2.24 7.9475 0 5.1875 0ZM5.1875 5.5C4.9125 5.5 4.6875 5.275 4.6875 5V3C4.6875 2.725 4.9125 2.5 5.1875 2.5C5.4625 2.5 5.6875 2.725 5.6875 3V5C5.6875 5.275 5.4625 5.5 5.1875 5.5ZM5.6875 7.5H4.6875V6.5H5.6875V7.5Z" fill="#FFAB91"/>
+                                    </svg>
+                                </spsn>
+                            </td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                                <span class="action__btn">
+                                    <svg width="14" height="4" viewBox="0 0 14 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom__pagination--container">
+                        <div class="page__number">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <g clip-path="url(#clip0_5621_4946)">
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5621_4946">
+                                    <rect width="16" height="16" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class="page__fill">01</span>
+                            <span>02</span>
+                            <span>03</span>
+                            <span>...</span>
+                            <span>24</span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <g clip-path="url(#clip0_5621_4960)">
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5621_4960">
+                                    <rect width="16" height="16" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="row__number">
+                            <div class="chart__top--right">
+                                <select name="day" id="rowNumber">
+                                    <option selected value="0">10 Rows</option>
+                                    <option value="1">20 Rows</option>
+                                    <option value="2">30 Rows</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade active show" id="uploaded-payroll" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h3 class="table__heading">List</h3>
+                    <table class="table table-borderless payroll__table">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+
+                            </th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">KeyPay Upload Status</th>
+                            <th scope="col">Business</th>
+                            <th scope="col">Occupation</th>
+                            <th scope="col">Verified Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Talan</td>
+                            <td>Saris</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Maren</td>
+                            <td>George</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Makenna</td>
+                            <td>Saris</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Phillip</td>
+                            <td>Levin</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Gretchen</td>
+                            <td>Schleifer</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Wilson</td>
+                            <td>Aminoff</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Erin</td>
+                            <td>Korsgaard</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Emerson</td>
+                            <td>Passaquindici</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Phillip</td>
+                            <td>Rosser</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>Emerson</td>
+                            <td>Rhiel Madsen</td>
+                            <td>crackerjack@gmail.com</td>
+                            <td>Pending</td>
+                            <td>CrackerJack</td>
+                            <td>Barista</td>
+                            <td>12/12/2020</td>
+                            <td class="d-flex">
+                                <span class="action__btn mx-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6667 0.666504H2.33341C1.41675 0.666504 0.666748 1.4165 0.666748 2.33317V17.3332L4.00008 13.9998H15.6667C16.5834 13.9998 17.3334 13.2498 17.3334 12.3332V2.33317C17.3334 1.4165 16.5834 0.666504 15.6667 0.666504ZM15.6667 12.3332H4.00008L2.33341 13.9998V2.33317H15.6667V12.3332Z" fill="#F16532"/>
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom__pagination--container">
+                        <div class="page__number">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <g clip-path="url(#clip0_5621_4946)">
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5621_4946">
+                                    <rect width="16" height="16" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class="page__fill">01</span>
+                            <span>02</span>
+                            <span>03</span>
+                            <span>...</span>
+                            <span>24</span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <g clip-path="url(#clip0_5621_4960)">
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5621_4960">
+                                    <rect width="16" height="16" fill="white" transform="translate(4 4)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="row__number">
+                            <div class="chart__top--right">
+                                <select name="day" id="rowNumber">
+                                    <option selected value="0">10 Rows</option>
+                                    <option value="1">20 Rows</option>
+                                    <option value="2">30 Rows</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--            Footer          -->
+
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__menu--container">
+                <ul class="d-flex align-items-center">
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="copyright__container">
+                    <p id="year">
+                        <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+                        ©SaucedIt
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    var profileMenu = document.getElementById("profile");
+    profileMenu.onclick = function () {
+        var menuList = document.getElementById("profileMenu");
+        menuList.classList.toggle("menu__show");
+    };
+
+    /*Left dropdown menu*/
+    var sidebar = document.getElementById("dropdown");
+    var menuList = document.getElementById("dropdownMenu");
+    sidebar.onclick = function () {
+        menuList.classList.toggle("menu__show");
+        document.querySelector("#dropdown > svg").classList.toggle('rotate')
+    };
+
+    /*Left menu*/
+    var navMenu = document.getElementById("navBar");
+    navMenu.onclick = function () {
+        var menuList = document.getElementById("leftMenu");
+        menuList.classList.toggle("navmenu__show");
+    };
+
+    /*Menu bar*/
+
+    document.querySelector("#navBar").addEventListener('click', function () {
+        document.querySelector("#navBar").classList.toggle('cross__menu--bar')
+    })
+
+    /*Breadcrumb*/
+    let text = document.querySelector('.active_breadcrumb');
+    document.getElementById('nav-profile-tab').addEventListener('click', function (){
+        text.innerHTML ='Pending';
+    })
+    document.getElementById('nav-contact-tab').addEventListener('click', function (){
+        text.innerHTML ='Verified';
+    })
+
+    /*Action bar*/
+    document.querySelector('.sync__payroll').addEventListener('click', function (){
+        document.querySelector('.payroll__sync--container').classList.toggle('sync__payroll--active')
+    })
+    document.querySelector('.recent__invitation').addEventListener('click', function (){
+        document.querySelector('.invitation__recent--container').classList.toggle('recent__invitation--active')
+    })
+</script>
+</body>
+</html>

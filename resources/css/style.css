@@ -1622,3 +1622,32 @@ header{
     right: 20px;
     bottom: 20px;
 }
+.btn__jobs{
+    padding: 12px 16px;
+    background: #F16532;
+    border: 1px solid #F16532;
+    border-radius: 4px;
+    text-align: center;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.btn__sync{
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid var(--red-color);
+    text-align: center;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F16532;
+
+}
