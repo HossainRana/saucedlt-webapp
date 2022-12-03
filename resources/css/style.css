@@ -1113,14 +1113,18 @@ header{
     background: #FAFAFA;
     border: 1px solid #F5F5F5;
     border-radius: 12px;
-    padding: 0 10px;
+    padding: 13px;
 }
-.chart__top--right select{
-    background: #FAFAFA;
-    border: none;
-    width: 100%;
-    height: 48px;
-    outline: none;
+.chart__top--right svg{
+    position: absolute;
+    top: 24px;
+    right: 14px;
+}
+.chart__top--right svg path{
+    fill: #ffffff;
+}
+.svg__fill svg path{
+    fill: #000000;
 }
 .chart__top--right option{
     border: none;
@@ -2186,4 +2190,46 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
 }
 .application__action--option{
     left: -28px !important;
+}
+.job__filter--list{
+    position: absolute;
+    min-width: 217px;
+    padding: 13px 15px 15px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+    z-index: 1;
+    right: 0;
+    top: 57px;
+}
+.filter__heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.filter__heading span:first-child{
+    font-family: 'Qanelas ';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
+.filter__heading span:nth-child(2){
+    font-family: 'Qanelas ';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #212121;
+}
+.filter__group label{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #212121;
+    margin-bottom: 15px;
 }
