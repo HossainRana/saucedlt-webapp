@@ -28,27 +28,32 @@ $(document).ready(function (){
     })
 
     /*Breadcrumb*/
-    let text = document.querySelector('.active_breadcrumb');
-    document.getElementById('nav-profile-tab').addEventListener('click', function (){
-        text.innerHTML ='Pending';
-    })
-    document.getElementById('nav-contact-tab').addEventListener('click', function (){
-        text.innerHTML ='Uploaded';
-    })
-    document.getElementById('nav-home-tab').addEventListener('click', function (){
-        text.innerHTML ='All';
-    })
+    // let text = document.querySelector('.active_breadcrumb');
+    // document.getElementById('nav-profile-tab').addEventListener('click', function (){
+    //     text.innerHTML ='Pending';
+    // })
+    // document.getElementById('nav-contact-tab').addEventListener('click', function (){
+    //     text.innerHTML ='Uploaded';
+    // })
+    // document.getElementById('nav-home-tab').addEventListener('click', function (){
+    //     text.innerHTML ='All';
+    // })
 
-    let breadCrumb = document.querySelector('.employee_breadcrumb');
-    document.getElementById('all-employee-tab').addEventListener('click', function (){
-        alert('test')
-        breadCrumb.innerHTML ='All Employees';
-    })
-    document.getElementById('visa-tab').addEventListener('click', function (){
-        breadCrumb.innerHTML ='Visa Status';
-    })
-    document.getElementById('uploded-tab').addEventListener('click', function (){
-        breadCrumb.innerHTML ='Uploaded';
+    // let breadCrumb = document.querySelector('.employee_breadcrumb');
+    // document.getElementById('all-employee-tab').addEventListener('click', function (){
+    //     alert('test')
+    //     breadCrumb.innerHTML ='All Employees';
+    // })
+    // document.getElementById('visa-tab').addEventListener('click', function (){
+    //     breadCrumb.innerHTML ='Visa Status';
+    // })
+    // document.getElementById('uploded-tab').addEventListener('click', function (){
+    //     breadCrumb.innerHTML ='Uploaded';
+    // })
+
+
+    $('.visa_status').click(function (){
+        $('.payroll__sync--container').toggleClass('sync__payroll--active')
     })
 
     /*Action bar*/
@@ -58,6 +63,5 @@ $(document).ready(function (){
     document.querySelector('.recent__invitation').addEventListener('click', function (){
         document.querySelector('.invitation__recent--container').classList.toggle('recent__invitation--active')
     })
-
 
 })
