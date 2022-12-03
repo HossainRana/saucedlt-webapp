@@ -1022,6 +1022,10 @@ header{
     line-height: 20px;
     color: #FFFFFF;
 }
+.cancel__btn i,
+.save__btn i{
+    margin-right: 14px;
+}
 .account__password--strength{
     display: flex;
     justify-content: flex-start;
@@ -1239,10 +1243,10 @@ header{
 #payroll-nav .nav-link:hover svg path{
     fill: var(--red-color);
 }
-#payroll-nav i{
-    margin-right: 15px;
-    font-size: 20px;
-}
+/*#payroll-nav i{*/
+/*    margin-right: 15px;*/
+/*    font-size: 20px;*/
+/*}*/
 #payroll-nav .nav-link.active{
     color: var(--red-color);
 }
@@ -1462,6 +1466,9 @@ header{
 .action__btn:hover i{
     color: #ffffff;
 }
+.action__btn:hover svg path{
+    fill: #ffffff;
+}
 #all-payroll > table > tbody > tr > td.d-flex > span:nth-child(2),
 #pending-payroll> table > tbody > tr > td.d-flex > span:nth-child(2),
 #uploaded-payroll> table > tbody > tr > td.d-flex > span:nth-child(2){
@@ -1678,7 +1685,7 @@ header{
 }
 .each__detail--input .textarea {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 16px;
     background-color: #FAFAFA;
     border: 1px solid rgba(0, 0, 0, 0.23);
     border-radius: 12px;
@@ -2017,6 +2024,7 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
     color: #ffffff;
     border-radius: 50%;
     padding: 2px;
+    font-size: 10px;
 }
 .cross_check{
     padding: 12px 17px;
@@ -2032,7 +2040,8 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
     background: #FFC107;
     color: #ffffff;
     border-radius: 50%;
-    padding: 2px;
+    padding: 3px 4px;
+    font-size: 10px;
 }
 .details__container .accordion-item:first-of-type .accordion-button{
     border-top-left-radius: 0;
@@ -2114,4 +2123,67 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
 #all-payroll > table > tbody > tr:nth-child(1) > td.d-flex.position-relative > div{
     left: -16px;
     top: 58px;
+}
+.new__listing{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.new__listing h3{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;color: #212121;
+}
+.listing__form{
+    margin-top: 28px;
+}
+.listing__form h4{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;color: #212121;
+    margin-top: 16px;
+}
+body > div.content-container > div > div.new__listing > div > div:nth-child(7) > input{
+    margin-top: 16px;
+}
+.each__detail--input i{
+    position: absolute;
+    right: -38px;
+    top: 32px;
+    font-size: 20px;
+}
+.add__question{
+    margin-top: 16px;
+}
+.add__question i{
+    font-size: 20px;
+    margin-right: 16px;
+}
+.add__question span{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+.publish__job{
+    margin-top: 32px;
+    border-top: 1px solid #F5F5F5;
+    width: 474px;
+}
+.publish__job label{
+    padding-top: 19px;
+}
+body > div.content-container > div > div.new__listing > div.listing__submit > div > button.save__btn > span{
+    font-family: auto;
+}
+.application__action--option{
+    left: -28px !important;
 }

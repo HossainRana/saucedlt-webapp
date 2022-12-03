@@ -55,6 +55,9 @@ $(document).ready(function (){
     $('.visa_status').click(function (){
         $('.payroll__sync--container').toggleClass('sync__payroll--active')
     })
+    $('.action__btn-application').click(function (){
+        $('.payroll__sync--container').toggleClass('sync__payroll--active')
+    })
 
     /*Action bar*/
     document.querySelector('.sync__payroll').addEventListener('click', function (){
