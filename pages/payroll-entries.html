@@ -289,7 +289,7 @@
                                 <svg width="14" height="7" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
                                 </svg>
-                                <div class="job__filter--list">
+                                <div class="job__filter--list" id="jobFilterContent">
                                     <div class="filter__heading">
                                         <span>Jobs</span>
                                         <span>Clear</span>
@@ -331,7 +331,7 @@
                                 <svg width="14" height="7" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
                                 </svg>
-                                <div class="job__filter--list">
+                                <div class="job__filter--list" id="venusFilterContent">
                                     <div class="filter__heading">
                                         <span>Venues</span>
                                         <span>Clear</span>
@@ -345,9 +345,9 @@
                                     <div class="filter__checkbox">
                                         <div class="filter__group mt-2">
                                             <input type="checkbox" name="" id="id6">
-                                            <label for="id6">Select All</label>
+                                            <label class="mb-0" for="id6">Select All</label>
                                         </div>
-                                        <div class="c-border mt-2"></div>
+                                        <div class="c-border mt-2 mb-2"></div>
                                         <div class="filter__group">
                                             <input type="checkbox" name="" id="id7">
                                             <label for="id7">Barista</label>
@@ -374,6 +374,26 @@
                                 <svg width="14" height="7" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
                                 </svg>
+                                <div class="job__filter--list" id="syncFilterContent">
+                                    <div class="filter__heading">
+                                        <span>Sync</span>
+                                        <span>Clear</span>
+                                    </div>
+                                    <div class="filter__checkbox">
+                                        <div class="filter__group mt-2">
+                                            <input type="radio" name="sync" id="id11" value="KeyPay Sync">
+                                            <label for="id11">KeyPay Sync</label>
+                                        </div>
+                                        <div class="filter__group">
+                                            <input type="radio" name="sync" id="id12" value="Xero Sync">
+                                            <label for="id12">Xero Sync</label>
+                                        </div>
+                                        <div class="filter__group">
+                                            <input type="radio" name="sync" id="id13" value="Deputy Sync">
+                                            <label for="id13">Deputy Sync</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

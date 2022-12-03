@@ -59,6 +59,28 @@ $(document).ready(function (){
         $('.payroll__sync--container').toggleClass('sync__payroll--active')
     })
 
+
+    $("#jobFilterContent").hide();
+    $("#venusFilterContent").hide();
+    $("#syncFilterContent").hide();
+
+    $("#jobFilter").click(function (){
+        $("#jobFilterContent").show();
+        $("#venusFilterContent").hide();
+        $("#syncFilterContent").hide();
+    })
+    $("#venusFilter").click(function (){
+        $("#venusFilterContent").show();
+        $("#jobFilterContent").hide();
+        $("#syncFilterContent").hide();
+    })
+    $("#syncFilter").click(function (){
+        $("#syncFilterContent").show();
+        $("#jobFilterContent").hide();
+        $("#venusFilterContent").hide();
+    })
+
+
     /*Action bar*/
     document.querySelector('.sync__payroll').addEventListener('click', function (){
         document.querySelector('.payroll__sync--container').classList.toggle('sync__payroll--active')

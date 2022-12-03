@@ -2200,6 +2200,7 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
     z-index: 1;
     right: 0;
     top: 57px;
+    display: none;
 }
 .filter__heading{
     display: flex;
