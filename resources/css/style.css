@@ -2320,3 +2320,7 @@ input:checked ~ .checkmark:after {
     margin-top: -7px;
 }
 /*Input Checkbox End*/
+
+.filter__container{
+    display: block !important;
+}

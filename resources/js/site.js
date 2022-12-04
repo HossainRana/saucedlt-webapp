@@ -65,19 +65,19 @@ $(document).ready(function (){
     $("#syncFilterContent").hide();
 
     $("#jobFilter").click(function (){
-        $("#jobFilterContent").show();
-        $("#venusFilterContent").hide();
-        $("#syncFilterContent").hide();
+        $("#jobFilterContent").toggleClass('filter__container');
+        $("#venusFilterContent").removeClass('filter__container');
+        $("#syncFilterContent").removeClass('filter__container');
     })
     $("#venusFilter").click(function (){
-        $("#venusFilterContent").show();
-        $("#jobFilterContent").hide();
-        $("#syncFilterContent").hide();
+        $("#venusFilterContent").toggleClass('filter__container');
+        $("#jobFilterContent").removeClass('filter__container');
+        $("#syncFilterContent").removeClass('filter__container');
     })
     $("#syncFilter").click(function (){
-        $("#syncFilterContent").show();
-        $("#jobFilterContent").hide();
-        $("#venusFilterContent").hide();
+        $("#syncFilterContent").toggleClass('filter__container');
+        $("#jobFilterContent").removeClass('filter__container');
+        $("#venusFilterContent").removeClass('filter__container');
     })
 
 
