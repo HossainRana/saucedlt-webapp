@@ -213,7 +213,8 @@
 <div class="content-container">
     <div class="container-layout">
         <div class="breadcums">
-            <h3>Job Listings Active&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<span class="active_breadcrumb">All Applications</span></h3>
+            <h3>Job Listings Active&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;<span
+                    class="active_breadcrumb">All Applications</span></h3>
         </div>
 
 
@@ -226,19 +227,24 @@
 
             <nav id="payroll-nav">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#all-payroll" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#all-payroll"
+                            type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                         <i class="fa fa-list-alt" aria-hidden="true"></i>
                         All Applications
                     </button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#pending-payroll" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#pending-payroll"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                         Invited
                     </button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#uploaded-payroll" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#uploaded-payroll" type="button" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                         Short listed
                     </button>
-                    <button class="nav-link" id="nav-nofit-tab" data-bs-toggle="tab" data-bs-target="#no-fit" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    <button class="nav-link" id="nav-nofit-tab" data-bs-toggle="tab" data-bs-target="#no-fit"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                         <i class="fa fa-times-circle-o" aria-hidden="true"></i>
                         Not a fit
                     </button>
@@ -254,8 +260,10 @@
                     <div class="row m-0">
                         <div class="col-lg-12 col-md-12 col-12 p-0">
                             <div class="payroll__search">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.33326 7.33326H7.8066L7.61993 7.15326C8.41993 6.21993 8.83326 4.9466 8.6066 3.59326C8.29326 1.73993 6.7466 0.259929 4.87993 0.0332621C2.05993 -0.313405 -0.313405 2.05993 0.0332621 4.87993C0.259929 6.74659 1.73993 8.29326 3.59326 8.6066C4.9466 8.83326 6.21993 8.41993 7.15326 7.61993L7.33326 7.80659V8.33326L10.1666 11.1666C10.4399 11.4399 10.8866 11.4399 11.1599 11.1666C11.4333 10.8933 11.4333 10.4466 11.1599 10.1733L8.33326 7.33326ZM4.33326 7.33326C2.67326 7.33326 1.33326 5.99326 1.33326 4.33326C1.33326 2.67326 2.67326 1.33326 4.33326 1.33326C5.99326 1.33326 7.33326 2.67326 7.33326 4.33326C7.33326 5.99326 5.99326 7.33326 4.33326 7.33326Z" fill="#616161"/>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.33326 7.33326H7.8066L7.61993 7.15326C8.41993 6.21993 8.83326 4.9466 8.6066 3.59326C8.29326 1.73993 6.7466 0.259929 4.87993 0.0332621C2.05993 -0.313405 -0.313405 2.05993 0.0332621 4.87993C0.259929 6.74659 1.73993 8.29326 3.59326 8.6066C4.9466 8.83326 6.21993 8.41993 7.15326 7.61993L7.33326 7.80659V8.33326L10.1666 11.1666C10.4399 11.4399 10.8866 11.4399 11.1599 11.1666C11.4333 10.8933 11.4333 10.4466 11.1599 10.1733L8.33326 7.33326ZM4.33326 7.33326C2.67326 7.33326 1.33326 5.99326 1.33326 4.33326C1.33326 2.67326 2.67326 1.33326 4.33326 1.33326C5.99326 1.33326 7.33326 2.67326 7.33326 4.33326C7.33326 5.99326 5.99326 7.33326 4.33326 7.33326Z"
+                                          fill="#616161"/>
                                 </svg>
                                 <input type="text" name="search" id="payroll-search" placeholder="Search...">
                             </div>
@@ -285,7 +293,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Louie</td>
                             <td>McGee</td>
                             <td>
@@ -323,7 +336,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Maren</td>
                             <td>George</td>
                             <td>
@@ -353,7 +371,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Makenna</td>
                             <td>Saris</td>
                             <td>
@@ -383,7 +406,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Levin</td>
                             <td>
@@ -413,7 +441,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Gretchen</td>
                             <td>Schleifer</td>
                             <td>
@@ -443,7 +476,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Wilson</td>
                             <td>Aminoff</td>
                             <td>
@@ -473,7 +511,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Erin</td>
                             <td>Korsgaard</td>
                             <td>
@@ -503,7 +546,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Passaquindici</td>
                             <td>
@@ -533,7 +581,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Rosser</td>
                             <td>
@@ -563,7 +616,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Rhiel Madsen</td>
                             <td>
@@ -597,10 +655,12 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
-                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4946">
@@ -615,10 +675,12 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
-                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4960">
@@ -660,7 +722,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Louie</td>
                             <td>McGee</td>
                             <td>
@@ -711,7 +778,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Maren</td>
                             <td>George</td>
                             <td>
@@ -756,7 +828,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Makenna</td>
                             <td>Saris</td>
                             <td>
@@ -801,7 +878,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Levin</td>
                             <td>
@@ -846,7 +928,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Gretchen</td>
                             <td>Schleifer</td>
                             <td>
@@ -891,7 +978,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Wilson</td>
                             <td>Aminoff</td>
                             <td>
@@ -936,7 +1028,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Erin</td>
                             <td>Korsgaard</td>
                             <td>
@@ -981,7 +1078,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Passaquindici</td>
                             <td>
@@ -1026,7 +1128,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Rosser</td>
                             <td>
@@ -1071,7 +1178,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Rhiel Madsen</td>
                             <td>
@@ -1120,10 +1232,12 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
-                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4946">
@@ -1138,10 +1252,12 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
-                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4960">
@@ -1180,7 +1296,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Louie</td>
                             <td>McGee</td>
                             <td>
@@ -1217,7 +1338,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Maren</td>
                             <td>George</td>
                             <td>
@@ -1247,7 +1373,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Makenna</td>
                             <td>Saris</td>
                             <td>
@@ -1277,7 +1408,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Levin</td>
                             <td>
@@ -1307,7 +1443,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Gretchen</td>
                             <td>Schleifer</td>
                             <td>
@@ -1337,7 +1478,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Wilson</td>
                             <td>Aminoff</td>
                             <td>
@@ -1367,7 +1513,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Erin</td>
                             <td>Korsgaard</td>
                             <td>
@@ -1397,7 +1548,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Passaquindici</td>
                             <td>
@@ -1427,7 +1583,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Rosser</td>
                             <td>
@@ -1457,7 +1618,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Rhiel Madsen</td>
                             <td>
@@ -1491,10 +1657,12 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
-                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4946">
@@ -1509,10 +1677,12 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
-                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4960">
@@ -1552,7 +1722,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Louie</td>
                             <td>McGee</td>
                             <td>
@@ -1589,7 +1764,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Maren</td>
                             <td>George</td>
                             <td>
@@ -1619,7 +1799,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Makenna</td>
                             <td>Saris</td>
                             <td>
@@ -1649,7 +1834,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Levin</td>
                             <td>
@@ -1679,7 +1869,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Gretchen</td>
                             <td>Schleifer</td>
                             <td>
@@ -1709,7 +1904,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Wilson</td>
                             <td>Aminoff</td>
                             <td>
@@ -1739,7 +1939,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Erin</td>
                             <td>Korsgaard</td>
                             <td>
@@ -1769,7 +1974,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Passaquindici</td>
                             <td>
@@ -1799,7 +2009,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Phillip</td>
                             <td>Rosser</td>
                             <td>
@@ -1829,7 +2044,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <label class="checkbox__container">&nbsp;
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
                             <td>Emerson</td>
                             <td>Rhiel Madsen</td>
                             <td>
@@ -1863,10 +2083,12 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
-                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z" fill="#757575"/>
+                                    <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4946">
@@ -1881,10 +2103,12 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="24" height="24" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
-                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z" fill="#757575"/>
+                                    <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
+                                          fill="#757575"/>
                                     </g>
                                     <defs>
                                     <clipPath id="clip0_5621_4960">
