@@ -1600,6 +1600,10 @@ header{
     margin-top: 11px;
 }
 
+#nav-tab button > i{
+    font-size: 18px;
+    margin-right: 16px;
+}
 .employee__details--container #payroll-nav .nav-link.active::after{
     content: '';
     width: 100%;
@@ -1750,9 +1754,13 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #F16532;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn__sync i{
     margin-right: 16px;
+    font-size: 19px;
 }
 .btn__edit{
     padding: 9px 26px;
@@ -2323,4 +2331,7 @@ input:checked ~ .checkmark:after {
 
 .filter__container{
     display: block !important;
+}
+#write-note.modal{
+    backdrop-filter: brightness(0.7);
 }
