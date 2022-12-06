@@ -719,6 +719,10 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.content-container > div > div.row.m-0 > div:nth-child(2) > div > div.card__details--bottom > h3 > img{
+    right: 0;
+    bottom: 0;
+}
 .bg__1{
     background-image: url("../../resources/images/backgrounds/card-bg-1.png");
     height: 169px;
@@ -978,6 +982,11 @@ header{
     font-size: 10px;
     line-height: 16px;
     color: #9E9E9E;
+}
+#details-tab > div > div.account__form--container > form > div > div:nth-child(3) > div > svg{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
 }
 .form__group input{
     border: none;
@@ -1246,6 +1255,9 @@ header{
     border: none;
     color: var(--red-color);
 }
+#payroll-nav .nav-link svg{
+    margin-right: 15px;
+}
 #payroll-nav .nav-link:hover svg path{
     fill: var(--red-color);
 }
@@ -1254,10 +1266,13 @@ header{
 /*    font-size: 20px;*/
 /*}*/
 #payroll-nav .nav-link.active{
-    color: var(--red-color);
+    /*color: var(--red-color);*/
 }
 #payroll-nav .nav-link.active svg path{
-    fill: var(--red-color);
+    /*fill: var(--red-color);*/
+}
+.content-container > div > div.payroll__search--container > div > div.col-lg-7.col-md-12.col-12 > div > div.col-lg-2.col-md-2.col-2.p-0 > button > svg{
+    margin-right: 14px;
 }
 #payroll-nav .nav-link::after{
     content: '';
@@ -1458,7 +1473,7 @@ header{
     background-color: var(--red-color);
 }
 .action__btn svg{
-    background: #FBD1C2;
+    /*background: #FBD1C2;*/
 }
 .action__btn i{
     color: var(--red-color);
@@ -1505,6 +1520,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.page__number span:not(:first-child){
+    color: var(--red-color);
 }
 .page__fill{
     display: flex;
