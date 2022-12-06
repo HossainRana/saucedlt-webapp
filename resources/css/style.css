@@ -1,5 +1,5 @@
-@font-face { font-family: 'Qanelas'; src: url("../fonts/QanelasSoft/QanelasSoftDEMO-UltraLight.otf"); }
-@font-face { font-family: 'Qanelas'; font-weight: bold; src: url("../fonts/QanelasSoft/QanelasSoftDEMO-ExtraBold.otf"); }
+@font-face { font-family: 'Qanelas'; src: url("../fonts/Qanelas/Radomir Tinkov - QanelasSoft-Regular.otf"); }
+@font-face { font-family: 'Qanelas'; font-weight: bold; src: url("../fonts/Qanelas/Radomir Tinkov - QanelasSoft-Bold.otf"); }
 @font-face { font-family: 'SF Pro Display'; src: url("../fonts/sf-pro/SFPRODISPLAYREGULAR.OTF"); }
 @font-face { font-family: 'Qanelas'; font-weight: bold; src: url("../fonts/sf-pro/SFPRODISPLAYBOLD.OTF"); }
 :root{
@@ -656,9 +656,7 @@ header{
     color: #F16532;
     margin-bottom: 24px;
 }
-.verification__mail--container p span{
-    font-family: auto;
-}
+
 .input__group--container{
     display: flex;
     justify-content: center;
@@ -853,7 +851,6 @@ header{
 .copyright__container p{
     margin: 0;
     padding: 0;
-    font-family: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1311,10 +1308,19 @@ header{
     display: flex;
     align-items: center;
 }
-.payroll__search svg{
+.chat__search{
+    background: #FAFAFA;
+    border: 1px solid #F6ECE1;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+}
+.payroll__search svg,
+.chat__search svg{
     margin-right: 8px;
 }
-.payroll__search input{
+.payroll__search input, .chat__search input{
     border: none;
     outline: none;
     background: transparent;
@@ -1378,23 +1384,9 @@ header{
 #all-payroll > table > tbody > tr > td:nth-child(8),
 #pending-payroll > table > tbody > tr > td:nth-child(8),
 #uploaded-payroll > table > tbody > tr > td:nth-child(8){
-    font-family: auto;
     color: #21212194;
 }
-#all-payroll > table > tbody > tr > td:nth-child(9),
-#pending-payroll > table > tbody > tr > td:nth-child(9),
-#pending-payroll > table > tbody > tr > td:nth-child(10),
-#uploaded-payroll > table > tbody > tr > td:nth-child(9),
-#uploaded-payroll > table > tbody > tr > td:nth-child(10){
-    font-family: auto;
-    color: #21212194;
-}
-#all-payroll > table > tbody > tr > td:nth-child(4),
-#pending-payroll > table > tbody > tr > td:nth-child(4),
-#uploaded-payroll > table > tbody > tr > td:nth-child(4){
-    font-family: auto;
-    color: #21212194;
-}
+
 /*Custom checkbox*/
 
 #all-payroll > table > thead > tr > th:nth-child(1) label{
@@ -1879,9 +1871,6 @@ header{
     flex-flow: column;
     justify-content: center;
 }
-.progress__bar--container label span{
-    font-family: auto;
-}
 .progress__bar--container progress {
     height: 4px;
     background: #F16532;
@@ -2022,9 +2011,6 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
     letter-spacing: 0.03em;
     color: #212121;
     vertical-align: middle;
-}
-#employee-content > div:nth-child(3) > div.employee__content--container > table > tbody > tr > td:nth-child(3) > span{
-    font-family: auto;
 }
 .complete__tick{
     padding: 12px 17px;
@@ -2203,9 +2189,6 @@ body > div.content-container > div > div.new__listing > div > div:nth-child(7) >
     line-height: 24px;
     color: #212121;
 }
-body > div.content-container > div > div.new__listing > div.listing__submit > div > button.save__btn > span{
-    font-family: auto;
-}
 .application__action--option{
     left: -28px !important;
 }
@@ -2334,4 +2317,51 @@ input:checked ~ .checkmark:after {
 }
 #write-note.modal{
     backdrop-filter: brightness(0.7);
+}
+
+
+/*Chat Styles */
+
+.chat__container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.chat__container--heading{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+}
+.chat__inner--layout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.left__chathead--container{
+    width: 251px;
+    height: 100%;
+    padding: 16px;
+    background: #FAFAFA;border: 1px solid #F5F5F5;
+    border-radius: 4px;
+}
+.chat__border--bottom{
+    border-bottom: 1px solid #E3F2FD;
+    margin-top: 16px;
+}
+.left__chathead--container > h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #212121;
+    margin-top: 32px;
+    margin-bottom: 12px;
 }
