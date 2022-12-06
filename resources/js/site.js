@@ -60,25 +60,21 @@ $(document).ready(function (){
     })
 
 
-    $("#jobFilterContent").hide();
-    $("#venusFilterContent").hide();
-    $("#syncFilterContent").hide();
 
-    $("#jobFilter").click(function (){
-        $("#jobFilterContent").toggleClass('filter__container');
-        $("#venusFilterContent").removeClass('filter__container');
-        $("#syncFilterContent").removeClass('filter__container');
+    document.querySelector('.payroll__filter--container').addEventListener('click', function (e){
+        if (e.target.classList.contains('filter__btn')){
+            if (!e.target.classList.contains('active__filter--option')){
+                document.querySelector('.filter__btn').classList.remove('active__filter--option')
+            }
+            e.target.classList.toggle('active__filter--option');
+        }
     })
-    $("#venusFilter").click(function (){
-        $("#venusFilterContent").toggleClass('filter__container');
-        $("#jobFilterContent").removeClass('filter__container');
-        $("#syncFilterContent").removeClass('filter__container');
-    })
-    $("#syncFilter").click(function (){
-        $("#syncFilterContent").toggleClass('filter__container');
-        $("#jobFilterContent").removeClass('filter__container');
-        $("#venusFilterContent").removeClass('filter__container');
-    })
+
+    $(document).on('click', function(evt) {
+        if(!$(evt.target).is('.filter__btn')) {
+            $(".filter__btn").removeClass('active__filter--option');
+        }
+    });
 
 
     /*Action bar*/

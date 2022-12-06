@@ -1356,6 +1356,9 @@ header{
     background: var(--red-color) !important;
     color: #FFFFFF;
 }
+.active__filter--option .active__search--filter{
+    display: block;
+}
 .payroll__table--container{
     background: #FFFFFF;
     border-radius: 12px;
@@ -2327,6 +2330,17 @@ input:checked ~ .checkmark:after {
 
 .filter__checkbox > .filter__group > label > span{
     margin-top: -7px;
+}
+#venusFilterContent > div.filter__checkbox > div.filter__group > label > .checkmark:after,
+#jobFilterContent > div.filter__checkbox > div.filter__group > label > .checkmark:after{
+    left: 6px;
+    top: 3px;
+}
+#venusFilterContent > div.filter__checkbox > div.filter__group > label > span,
+#jobFilterContent > div.filter__checkbox > div.filter__group > label > span{
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
 }
 /*Input Checkbox End*/
 
