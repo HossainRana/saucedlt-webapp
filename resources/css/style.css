@@ -1356,8 +1356,14 @@ header{
     background: var(--red-color) !important;
     color: #FFFFFF;
 }
-.active__filter--option .active__search--filter{
-    display: block;
+.show__job{
+    display: block !important;
+}
+.show__venues{
+    display: block !important;
+}
+.show__sync{
+    display: block !important;
 }
 .payroll__table--container{
     background: #FFFFFF;
