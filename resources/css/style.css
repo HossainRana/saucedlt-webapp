@@ -2355,6 +2355,7 @@ input:checked ~ .checkmark:after {
 }
 #write-note.modal{
     backdrop-filter: brightness(0.7);
+    z-index: 9999;
 }
 
 
