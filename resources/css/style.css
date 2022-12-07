@@ -1530,7 +1530,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.page__number span:not(:first-child){
+.page__number span:not(:nth-child(2)){
     color: var(--red-color);
 }
 .page__fill{
@@ -1900,7 +1900,7 @@ header{
 }
 .progress__bar--container progress {
     height: 4px;
-    background: #F16532;
+    background: var(--red-color);
 }
 .progress__bar--container progress::-moz-progress-bar {
     background: black;
