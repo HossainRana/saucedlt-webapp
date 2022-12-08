@@ -2367,6 +2367,10 @@ input:checked ~ .checkmark:after {
     backdrop-filter: brightness(0.7);
     z-index: 9999;
 }
+#hr-document.modal{
+    backdrop-filter: brightness(0.7);
+    z-index: 9999;
+}
 
 
 /*Chat Styles */
