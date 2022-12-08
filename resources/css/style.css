@@ -2031,7 +2031,7 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
 #notes-content > div > div > table > thead > tr > th{
     font-family: 'Qanelas';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     line-height: 14px;
     color: #212121;
@@ -2132,7 +2132,7 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
 .dropzone i{
     color: #F16532;
     margin-top: 16px;
-    font-size: 40px;
+    font-size: 24px;
     transform: rotate(-136deg);
 }
 .attachment__container{
