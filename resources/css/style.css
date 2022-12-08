@@ -1898,14 +1898,24 @@ header{
     flex-flow: column;
     justify-content: center;
 }
-.progress__bar--container progress {
+progress {
     height: 4px;
     background: var(--red-color);
 }
-.progress__bar--container progress::-moz-progress-bar {
-    background: black;
+
+progress {
+    color: lightblue;
 }
-.progress__bar--container progress::-webkit-progress-bar {
+
+progress::-moz-progress-bar {
+    background: lightblue;
+}
+
+progress::-webkit-progress-value {
+    background: var(--red-color);
+}
+
+progress::-webkit-progress-bar {
     background: #F6ECE1;
 }
 body > div.content-container > div.container-layout > div.payroll__search--container > div > div.col-lg-5.col-md-12.col-12.mt-lg-0.mt-sm-4 > div > div:nth-child(3) > div > svg{
@@ -2470,4 +2480,8 @@ input:checked ~ .checkmark:after {
     height: 8px;
     border-radius: 50%;
     background: white;
+}
+.modal-backdrop
+{
+    opacity: 0 !important;
 }
