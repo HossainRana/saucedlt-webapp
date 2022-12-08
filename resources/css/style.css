@@ -1585,6 +1585,7 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #212121;
+    margin-bottom: 10px;
 }
 .sync__payroll--active,
 .recent__invitation--active{
@@ -1756,6 +1757,7 @@ header{
     line-height: 20px;
     color: #FFFFFF;
     white-space: nowrap;
+    cursor: pointer;
 }
 .btn__jobs i{
     margin-right: 16px;
@@ -1776,6 +1778,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .btn__sync i{
     margin-right: 16px;
@@ -1794,6 +1797,7 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #F16532;
+    cursor: pointer;
 }
 .validation__complete{
     padding: 4px 8px;
@@ -2214,9 +2218,10 @@ body > div.content-container > div > div.new__listing > div > div:nth-child(7) >
     color: #212121;
 }
 .publish__job{
-    margin-top: 32px;
+    margin-top: 16px;
     border-top: 1px solid #F5F5F5;
     width: 474px;
+    padding-top: 16px;
 }
 .publish__job label{
     font-family: 'Qanelas';
@@ -2488,4 +2493,23 @@ input:checked ~ .checkmark:after {
 .modal-backdrop
 {
     opacity: 0 !important;
+}
+input{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 20px;
+    color: #212121;
+}
+input::placeholder{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
+.payroll__search--container > div > div.col-lg-2.col-md-12.col-12.mt-lg-0.mt-sm-4 > div > div > a{
+    text-decoration: none;
 }

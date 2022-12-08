@@ -51,6 +51,21 @@ $(document).ready(function (){
     //     breadCrumb.innerHTML ='Uploaded';
     // })
 
+    /*Action popup hide*/
+
+
+
+    const tableAction = document.querySelector('.application__action--option');
+    const popUp = document.querySelector('.application__action--option').children[0]
+    document.addEventListener('click', function (e){
+
+            console.log(popUp)
+        if (tableAction.classList.contains('sync__payroll--active')){
+            // tableAction.classList.remove('sync__payroll--active')
+            // console.log(e.target)
+        }
+    })
+
 
     $('.visa_status').click(function (){
         $('.payroll__sync--container').toggleClass('sync__payroll--active')
@@ -58,6 +73,18 @@ $(document).ready(function (){
     $('.action__btn-application').click(function (){
         $('.payroll__sync--container').toggleClass('sync__payroll--active')
     })
+
+
+    /*Action bar*/
+    document.querySelector('.sync__payroll').addEventListener('click', function (){
+        document.querySelector('.payroll__sync--container').classList.toggle('sync__payroll--active')
+    })
+    document.querySelector('.recent__invitation').addEventListener('click', function (){
+        document.querySelector('.invitation__recent--container').classList.toggle('recent__invitation--active')
+    })
+
+
+
 
 
     /*filter*/
@@ -120,8 +147,6 @@ $(document).ready(function (){
         so.classList.add('show__sync')
     })
 
-
-
 /*    $(document).on('click', function(evt) {
         console.log(evt.target)
         if(!$(evt.target).is('job__list') ) {
@@ -129,14 +154,5 @@ $(document).ready(function (){
             // $(".job__list").removeClass('show__job');
         }
     });*/
-
-
-    /*Action bar*/
-    document.querySelector('.sync__payroll').addEventListener('click', function (){
-        document.querySelector('.payroll__sync--container').classList.toggle('sync__payroll--active')
-    })
-    document.querySelector('.recent__invitation').addEventListener('click', function (){
-        document.querySelector('.invitation__recent--container').classList.toggle('recent__invitation--active')
-    })
 
 })
