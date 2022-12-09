@@ -53,18 +53,21 @@ $(document).ready(function (){
 
     /*Action popup hide*/
 
-
-
-    const tableAction = document.querySelector('.application__action--option');
-    const popUp = document.querySelector('.application__action--option').children[0]
-    document.addEventListener('click', function (e){
-
-            console.log(popUp)
-        if (tableAction.classList.contains('sync__payroll--active')){
-            // tableAction.classList.remove('sync__payroll--active')
-            // console.log(e.target)
+    window.addEventListener('mouseup',function(event){
+        var pol = document.getElementById('worksiteActionbtn');
+        var ulc = document.querySelector('.payroll__sync--container').children[0];
+        if(event.target != pol && event.target.parentNode != pol && event.target.parentNode != ulc){
+            pol.classList.remove('sync__payroll--active')
         }
-    })
+    });
+
+    window.addEventListener('mouseup',function(event){
+        var pol = document.getElementById('filterActionbtn');
+        var ulc = document.querySelector('.payroll__sync--container').children[0];
+        if(event.target != pol && event.target.parentNode != pol && event.target.parentNode != ulc){
+            pol.classList.remove('sync__payroll--active')
+        }
+    });
 
 
     $('.visa_status').click(function (){
