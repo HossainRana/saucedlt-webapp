@@ -53,7 +53,7 @@ $(document).ready(function (){
 
     /*Action popup hide*/
 
-    window.addEventListener('mouseup',function(event){
+/*    window.addEventListener('mouseup',function(event){
         var pol = document.getElementById('worksiteActionbtn');
         var ulc = document.querySelector('.payroll__sync--container').children[0];
         if(event.target != pol && event.target.parentNode != pol && event.target.parentNode != ulc){
@@ -67,10 +67,10 @@ $(document).ready(function (){
         if(event.target != pol && event.target.parentNode != pol && event.target.parentNode != ulc){
             pol.classList.remove('sync__payroll--active')
         }
-    });
+    });*/
 
 
-    $('.visa_status').click(function (){
+/*    $('.visa_status').click(function (){
         $('.payroll__sync--container').toggleClass('sync__payroll--active')
     })
     $('.action__btn-application').click(function (){
@@ -78,13 +78,13 @@ $(document).ready(function (){
     })
 
 
-    /*Action bar*/
+    /!*Action bar*!/
     document.querySelector('.sync__payroll').addEventListener('click', function (){
         document.querySelector('.payroll__sync--container').classList.toggle('sync__payroll--active')
     })
     document.querySelector('.recent__invitation').addEventListener('click', function (){
         document.querySelector('.invitation__recent--container').classList.toggle('recent__invitation--active')
-    })
+    })*/
 
 
 

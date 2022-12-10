@@ -1585,7 +1585,7 @@ header{
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     left: -82px;
-    top: 52px;
+    top: 49px;
     display: flex;
     align-items: center;
     display: none;
@@ -1608,6 +1608,9 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #212121;
+}
+.payroll__sync--container ul li:not(:last-child),
+.invitation__recent--container ul li:not(:last-child){
     margin-bottom: 10px;
 }
 .sync__payroll--active,
@@ -2843,4 +2846,25 @@ input::placeholder{
 .message__action--toggle{
     display: none;
     pointer-events:none
+}
+.sync__payroll:hover .payroll__sync--container{
+    display: block !important;
+}
+.recent__invitation:hover .invitation__recent--container{
+    display: block !important;
+}
+.action__btn-application:hover .application__action--option{
+    display: block !important;
+}
+#all-payroll > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
+    left: -20px;
+}
+#pending-payroll > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
+    left: -20px;
+}
+#uploaded-payroll > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
+    left: -20px;
+}
+#no-fit > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
+    left: -20px;
 }
