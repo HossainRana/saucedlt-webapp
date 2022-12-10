@@ -1520,7 +1520,7 @@ header{
 #all-payroll > table > tbody > tr > td.d-flex > span:nth-child(2),
 #pending-payroll> table > tbody > tr > td.d-flex > span:nth-child(2),
 #uploaded-payroll> table > tbody > tr > td.d-flex > span:nth-child(2){
-    padding: 12px 14px;
+    /*padding: 12px 14px;*/
 }
 /*#all-payroll > table > thead > tr > th > input[type=checkbox],*/
 /*#all-payroll > table > tbody > tr > td > input[type=checkbox],*/
@@ -2867,4 +2867,7 @@ input::placeholder{
 }
 #no-fit > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
     left: -20px;
+}
+.visa__action{
+    left: -119px !important;
 }
