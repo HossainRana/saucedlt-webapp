@@ -62,7 +62,12 @@ $(document).ready(function (){
                 text: "",
             },
             legend: {
-                position: "bottom"
+                position: "bottom",
+                labels: {
+                    usePointStyle: true,
+                    boxWidth: 12,
+                    padding: 74
+                }
             },
             tooltips: {
                 mode: 'label'
@@ -94,19 +99,29 @@ $(document).ready(function (){
                 label: "Data",
                 borderColor: "#80b6f4",
                 pointBorderColor: "#80b6f4",
-                pointBackgroundColor: "#80b6f4",
+                pointBackgroundColor: "#5E35B1",
                 pointHoverBackgroundColor: "#5E35B1",
                 pointHoverBorderColor: "#80b6f4",
                 pointBorderWidth: 0,
                 pointHoverRadius: 5,
                 pointHoverBorderWidth: 1,
-                pointRadius: 1,
+                pointRadius: 4,
                 fill: true,
                 borderWidth: 1,
                 data: [10, 12, 15, 17, 18, 17, 16]
             }]
         },
         options: {
+            tooltips: {
+                callbacks: {
+                    labelColor: function(tooltipItem, chart) {
+                        return {
+                            borderColor: 'rgb(255, 0, 0)',
+                            backgroundColor: 'rgb(255, 0, 0)'
+                        }
+                    }
+                }
+            },
             legend: {
                 display: false
             },
