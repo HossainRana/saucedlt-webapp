@@ -174,7 +174,7 @@ header{
     font-size: 14px;
     line-height: 30px;
     color: #7D7D7E;
-    margin: 20px;
+    margin-left: 16px;
     text-decoration: none;
 }
 .profile__menu--container li h2{
@@ -1009,6 +1009,7 @@ header{
     display: flex;
     flex-flow: column;
     margin-bottom: 20px;
+    height: 66px;
 }
 .form__group label{
     font-family: 'SF Pro Display';
@@ -2904,4 +2905,26 @@ input::placeholder{
     font-size: 14px;
     line-height: 20px;
     color: #D84315 !important;
+}
+.row__number .chart__top--right{
+    border: 1px solid #EDE7F6 !important;
+}
+.form__group .password__input{
+    margin-top: 5px;
+    font-size: 20px !important;
+    letter-spacing: 8px;
+}
+.form__group .password__input::placeholder{
+    color: #212121;
+    font-size: 20px !important;
+    letter-spacing: 8px;
+}
+.nav svg{
+    stroke: #757575;
+}
+#payroll-nav .nav-link.active svg{
+    stroke: var(--red-color);
+}
+.sync__filter--btn svg path{
+    fill: var(--red-color);
 }
