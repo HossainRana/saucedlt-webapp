@@ -173,7 +173,7 @@ header{
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
-    color: #7D7D7E;
+    color: var(--red-color);
     margin-left: 16px;
     text-decoration: none;
 }
@@ -1290,13 +1290,13 @@ header{
 }
 #payroll-nav .nav-link:hover{
     border: none;
-    color: var(--red-color);
+    /*color: var(--red-color);*/
 }
 #payroll-nav .nav-link svg{
     margin-right: 15px;
 }
 #payroll-nav .nav-link:hover svg path{
-    fill: var(--red-color);
+    /*fill: var(--red-color);*/
 }
 /*#payroll-nav i{*/
 /*    margin-right: 15px;*/
@@ -2930,4 +2930,13 @@ input::placeholder{
 }
 .bar__chart--top .chart__top--right{
     border: 1px solid #F5F5F5 !important;
+}
+.mg-r{
+    margin-right: 16px;
+}
+.log__out--menu svg{
+    stroke: #000000;
+}
+.log__out--menu span a{
+    color: #000000;
 }

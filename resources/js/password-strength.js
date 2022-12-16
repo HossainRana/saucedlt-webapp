@@ -62,4 +62,25 @@
             t.innerText = data.label;
         } );
     } );
+
+
+    window.addEventListener( 'keypress', () => {
+        // Get element refs.
+        let p = document.querySelector( '.account__new--password' );
+        let b = document.querySelectorAll( '.account__password--bar' );
+        let t = document.querySelector( '.account__password--label' );
+
+        // Listen for updates to password field.
+        p.addEventListener( 'input', () => {
+            // Convert current value to data.
+            let data = scoreToData( evaluatePassword( p.value ) );
+
+            // Update DOM.
+            b.forEach(function (el){
+                // el.style.width = data.width;
+                el.style.background = data.color;
+            })
+            t.innerText = data.label;
+        } );
+    } );
 } )();
