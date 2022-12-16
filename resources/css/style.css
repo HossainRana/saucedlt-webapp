@@ -569,7 +569,7 @@ header{
 }
 .each__input--container svg{
     right: 24px;
-    bottom: 16px;
+    bottom: 19px;
 }
 
 .forget__pass--container a{
@@ -658,7 +658,7 @@ header{
     margin-bottom: 24px;
 }
 .password__strength--container .bar{
-    width: 104px;
+    width: 85px;
     height: 8px;
     background: #D84315;
     border-radius: 7px;
@@ -2927,4 +2927,7 @@ input::placeholder{
 }
 .sync__filter--btn svg path{
     fill: var(--red-color);
+}
+.bar__chart--top .chart__top--right{
+    border: 1px solid #F5F5F5 !important;
 }
