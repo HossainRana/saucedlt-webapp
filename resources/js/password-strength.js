@@ -1,4 +1,5 @@
 
+
 ( () => {
     /**
      * Parse a password string into a numeric value.
@@ -29,23 +30,26 @@
                 width: '120px',
                 color: 'green',
                 label: 'Strong',
+                check: '3',
             };
         } else if ( score >= 10 ) {
             return {
                 width: '100px',
                 color: '#fd9644',
                 label: 'Medium',
+                check: '2',
             };
         } else {
             return {
                 width: '85px',
                 color: '#D84315',
                 label: 'Weak',
+                check: '1',
             };
         }
     };
 
-    window.addEventListener( 'keypress', () => {
+    window.addEventListener( 'DOMContentLoaded', () => {
         // Get element refs.
         let p = document.querySelector( '.password-reset' );
         let b = document.querySelector( '.password__strength--bar' );
@@ -63,7 +67,7 @@
         } );
     } );
 
-
+/*
     window.addEventListener( 'keypress', () => {
         // Get element refs.
         let p = document.querySelector( '.account__new--password' );
@@ -82,5 +86,32 @@
             })
             t.innerText = data.label;
         } );
-    } );
+    } );*/
 } )();
+
+
+
+$(document).ready(function (){
+    function passwordCheck(password) {
+        if (password.length >= 8)
+            strength += 1;
+        if (password.match(/(?=.*[0-9])/))
+            strength += 1;
+        if (password.match(/(?=.*[!,%,&,@,#,$,^,*,?,_,~,<,>,])/))
+            strength += 1;
+        if (password.match(/(?=.*[a-z])/))
+            strength += 1;
+
+        displayBar(strength);
+    }
+
+    function displayBar(strength) {
+        $(".password-strength-group").attr('data-strength', strength);
+    }
+
+    $("#newPass").keyup(function () {
+        strength = 0;
+        var password = $(this).val();
+        passwordCheck(password);
+    });
+})
