@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 ::-webkit-scrollbar{
-    display: none;
+    /*display: none;*/
 }
 header{
     position: fixed;
@@ -1990,7 +1990,7 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
     padding: 0;
 }
 .employee__content--container{
-    padding: 20px 16px;
+    padding: 20px 16px 0;
 }
 .employee__contact--top{
     padding: 22px 20px;
@@ -2157,6 +2157,11 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
 #collapseOne > div > table > thead > tr,
 #collapseOne2 > div > table > tbody > tr:nth-child(1),
 #collapseOne2 > div > table > thead > tr{
+    width: 100%;
+    border-bottom: 1px solid #F6ECE1;
+    margin-top: 11px;
+}
+.border__tr{
     width: 100%;
     border-bottom: 1px solid #F6ECE1;
     margin-top: 11px;
@@ -3018,4 +3023,17 @@ input::placeholder{
 }
 .sync__filter--btn{
     background: #ffffff;
+}
+.employee__note table thead tr th{
+    font-size: 14px !important;
+    line-height: 17px !important;
+}
+
+.employee__note table tbody tr td{
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #212121;
 }
