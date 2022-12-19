@@ -11,8 +11,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
-    /*display: none;*/
+.left__menu--items::-webkit-scrollbar{
+    display: none;
 }
 header{
     position: fixed;
