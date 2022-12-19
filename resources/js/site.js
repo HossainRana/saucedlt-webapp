@@ -150,6 +150,15 @@ $(document).ready(function (){
         so.classList.add('show__sync')
     })
 
+    /*accordion*/
+    document.getElementById('headingOne').addEventListener('click', function (){
+        document.getElementById('headingOne').classList.toggle('headingRotate')
+        const toggle = document.getElementById('collapseOne').classList.toggle('display_acc')
+    })
+    document.getElementById('headingOne2').addEventListener('click', function (){
+        document.getElementById('headingOne2').classList.toggle('headingRotate')
+        const toggle = document.getElementById('collapseOne2').classList.toggle('display_acc')
+    })
 /*    $(document).on('click', function(evt) {
         console.log(evt.target)
         if(!$(evt.target).is('job__list') ) {

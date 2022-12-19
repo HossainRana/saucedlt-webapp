@@ -75,10 +75,18 @@ $(document).ready(function (){
             scales: {
                 xAxes: [{
                     stacked: true,
-                    barPercentage: 0.4
+                    barPercentage: 0.4,
+
+                    gridLines: {
+                        display: false,
+                    },
                 }],
                 yAxes: [{
-                    stacked: true
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true,
+                        stepSize: 400,
+                    },
                 }]
             }
         }
@@ -143,6 +151,9 @@ $(document).ready(function (){
                     ticks: {
                         display: false,
                         beginAtZero:true
+                    },
+                    gridLines: {
+                        display: false
                     }
                 }]
             }

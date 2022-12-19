@@ -3037,3 +3037,13 @@ input::placeholder{
     line-height: 14px;
     color: #212121;
 }
+.display_acc{
+    display: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    transform:rotate(0)
+}
+.headingRotate.accordion-button:not(.collapsed)::after{
+    transform: rotate(-180deg);
+}
