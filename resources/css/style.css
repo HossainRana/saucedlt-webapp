@@ -1155,7 +1155,7 @@ header{
 .chart__top--right{
     background: #FAFAFA;
     border: 1px solid var(--red-color);
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 13px;
     color: var(--red-color);
 }
