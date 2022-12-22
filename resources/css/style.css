@@ -1582,7 +1582,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.page__number span:not(:nth-child(2)){
+.page__number span{
     color: var(--red-color);
 }
 .page__fill{
@@ -1593,7 +1593,7 @@ header{
     padding: 3px 6px;
     background: #F16532;
     border-radius: 4px;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 #all-payroll > table > thead > tr > th,
 #all-payroll > table > tbody > tr > td,
@@ -2351,7 +2351,7 @@ body > div.content-container > div > div.new__listing > div > div:nth-child(7) >
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -3057,4 +3057,7 @@ input::placeholder{
 }
 .headingRotate.accordion-button:not(.collapsed)::after{
     transform: rotate(-180deg);
+}
+.page__count{
+    cursor: pointer;
 }

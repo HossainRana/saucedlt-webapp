@@ -38,4 +38,10 @@ $(document).ready(function (){
             const toggle = document.getElementById('collapseOne2').classList.toggle('display_acc')
         })
     }
+
+    $(".page__count").click(function (){
+        var add = $('.page__count');
+        add.removeClass('page__fill')
+        $(this).addClass('page__fill')
+    })
 })
