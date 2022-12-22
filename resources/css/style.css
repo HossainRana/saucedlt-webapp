@@ -572,6 +572,12 @@ header{
     bottom: 19px;
 }
 
+.each__input--container span{
+    right: 24px;
+    bottom: 19px;
+}
+
+
 .forget__pass--container a{
     font-family: 'Qanelas';
     font-style: normal;
@@ -987,6 +993,7 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #101623;
+    background: transparent;
 }
 .size__limit{
     padding: 0;
@@ -1032,6 +1039,10 @@ header{
 .form__group svg{
     right: 28px;
     bottom: 30px;
+}
+.form__group span{
+    right: 28px;
+    bottom: 24px;
 }
 .account__action--container{
     padding: 22px;

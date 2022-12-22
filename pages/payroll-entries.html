@@ -25,6 +25,7 @@
     <script src="../resources/js/bootstrap.min.js"></script>
     <script src="../resources/js/bootstrap.bundle.min.js"></script>
     <script src="../resources/js/site.js"></script>
+    <script src="../resources/js/fiter.js"></script>
     <title>Payroll Entries</title>
 </head>
 <body>
@@ -413,16 +414,16 @@
                                 </spsn>
                             </td>
                             <td class="d-flex">
-                                    <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                    </span>
+                                <span class="action__btn mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
-                                                  fill="#F16532"/>
-                                        </svg>
-                                    </span>
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
+                                              fill="#F16532"/>
+                                    </svg>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -451,10 +452,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -479,10 +480,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -516,10 +517,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -553,10 +554,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -581,10 +582,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -618,10 +619,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -646,10 +647,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -674,10 +675,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -711,10 +712,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -727,9 +728,9 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <rect width="18" height="18" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
                                     <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
                                           fill="#757575"/>
@@ -747,9 +748,9 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <rect width="18" height="18" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
                                     <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
                                           fill="#757575"/>
@@ -824,10 +825,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -862,10 +863,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -891,10 +892,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -929,10 +930,10 @@
                             </td>
                             <td class="d-flex">
                                 <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </span>
                                 <div class="action__btn sync__payroll">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -973,10 +974,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1002,10 +1003,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1040,10 +1041,10 @@
                             </td>
                             <td class="d-flex">
                                 <span class="action__btn mx-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </span>
                                 <div class="action__btn recent__invitation">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -1075,10 +1076,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1104,10 +1105,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1142,10 +1143,10 @@
                             </td>
                             <td class="d-flex">
                                 <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 </span>
                                 <span class="action__btn">
-                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                    <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                               fill="#F16532"/>
@@ -1158,9 +1159,9 @@
                     <div class="bottom__pagination--container">
                         <div class="page__number">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <rect width="18" height="18" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4946)">
                                     <path d="M13.4668 8L9.4668 12L13.4668 16L14.4068 15.06L11.3535 12L14.4068 8.94L13.4668 8Z"
                                           fill="#757575"/>
@@ -1178,9 +1179,9 @@
                             <span>...</span>
                             <span>24</span>
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="24" rx="12" fill="white"/>
+                                    <rect width="18" height="18" rx="12" fill="white"/>
                                     <g clip-path="url(#clip0_5621_4960)">
                                     <path d="M10.6666 8L9.72656 8.94L12.7799 12L9.72656 15.06L10.6666 16L14.6666 12L10.6666 8Z"
                                           fill="#757575"/>
@@ -1255,10 +1256,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1293,10 +1294,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1322,10 +1323,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1360,10 +1361,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1398,10 +1399,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1427,10 +1428,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1465,10 +1466,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1494,10 +1495,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1523,10 +1524,10 @@
                             <td>-</td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>
@@ -1561,10 +1562,10 @@
                             </td>
                             <td class="d-flex">
                                     <span class="action__btn mx-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                     </span>
                                 <span class="action__btn">
-                                        <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                        <svg  width="18" height="18" viewBox="0 0 14 4" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
                                                   fill="#F16532"/>

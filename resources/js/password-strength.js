@@ -56,6 +56,11 @@
         let t = document.querySelector( '.password__strength--label' );
 
         // Listen for updates to password field.
+
+        if (!p){
+            return;
+        }
+
         p.addEventListener( 'input', () => {
             // Convert current value to data.
             let data = scoreToData( evaluatePassword( p.value ) );
