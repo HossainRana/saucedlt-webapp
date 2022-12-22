@@ -52,4 +52,22 @@ $(document).ready(function (){
             $(this).addClass('active__chat--head');
         })
     }
+
+    if (document.querySelector('.job__list')){
+        document.querySelectorAll('.action__btn').forEach(function (e) {
+            e.addEventListener('click', function (el){
+                if (el.target.classList.contains('job__list')){
+                    el.target.classList.toggle('job__action--btn');
+                }
+            })
+        })
+
+        // document.querySelectorAll('.svg__action').forEach(function (e) {
+        //     e.addEventListener('click', function (el){
+        //         let close = document.getElementById('svg').parentElement;
+        //         close.classList.toggle('job__action--btn')
+        //     })
+        // })
+    }
+
 })
