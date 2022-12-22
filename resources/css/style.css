@@ -1773,6 +1773,22 @@ header{
     letter-spacing: 0.03em;
     color: #9E9E9E;
 }
+.each__detail--input .select__label {
+    position: absolute;
+    transform: translate(1.2rem, -3.4rem);
+    font-size: 1rem;
+    padding: 0 5px;
+    background-color: #fcffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #9E9E9E;
+    left: 0;
+    bottom: -14px;
+}
 .each__detail--input .textarea {
     position: relative;
     margin-top: 16px;
@@ -1782,7 +1798,13 @@ header{
     width: 474px;
     height: 3rem;
     padding: 0rem 1rem;
-    font-size: 1.4rem;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
 }
 .each__detail--input .textarea:focus {
     outline: none;
