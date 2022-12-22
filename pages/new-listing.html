@@ -92,12 +92,12 @@
                 </a>
             </li>
             <li class="each__menu--item">
-                <a class="sidebar__active" href="all-employees.html">
+                <a href="all-employees.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     Employees
                 </a>
             </li>
-            <li class="each__menu--item dropdown__menu" id="dropdown">
+            <li class="each__menu--item dropdown__menu sidebar__active" id="dropdown">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                     Job Listings
@@ -161,50 +161,39 @@
 
             <div class="listing__form">
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                    <input class='textarea' name='UserId' placeholder="Barista"/>
                     <br>
                     <label for='userId' class='label'>Job Title</label>
                 </div>
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
-                    <br>
-                    <label for='userId' class='label'>Industry</label>
-                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
-                    </svg>
+                    <select class="textarea">
+                        <option value="0" selected disabled>Hospitality</option>
+                    </select>
+                    <label for='userId' class='select__label'>Industry</label>
                 </div>
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
-                    <br>
-                    <label for='userId' class='label'>Category</label>
-                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
-                    </svg>
+                    <select class="textarea">
+                        <option value="0" selected disabled>Bar & Beverages</option>
+                    </select>
+                    <label for='userId' class='select__label'>Category</label>
                 </div>
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
-                    <br>
-                    <label for='userId' class='label'>Employment Type</label>
-                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
-                    </svg>
+                    <select class="textarea">
+                        <option value="0" selected disabled>Full Time</option>
+                    </select>
+                    <label for='userId' class='select__label'>Employment Type</label>
                 </div>
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
-                    <br>
-                    <label for='userId' class='label'>Department</label>
-                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
-                    </svg>
+                    <select class="textarea">
+                        <option value="0" selected disabled>Bar</option>
+                    </select>
+                    <label for='userId' class='select__label'>Department</label>
                 </div>
                 <h4>Add questions</h4>
                 <div class="each__detail--input">
-                    <input class='textarea' name='UserId' placeholder="Lorem ipsum dolor sit amet"/>
+                    <input class='textarea' name='UserId' placeholder="How many..."/>
                     <br>
                     <label for='userId' class='label'>Question 1</label>
-                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.666504 0.666504L3.99984 3.99984L7.33317 0.666504H0.666504Z" fill="#616161"/>
-                    </svg>
                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                 </div>
                 <div class="add__question">
@@ -221,11 +210,11 @@
             <div class="listing__submit">
                 <div class="account__action--container">
                     <button class="cancel__btn">
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                         Save as draft
                     </button>
                     <button class="save__btn">
-                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                         Save <span>&</span> Post
                     </button>
                 </div>

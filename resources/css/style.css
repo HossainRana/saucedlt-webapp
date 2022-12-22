@@ -1374,6 +1374,7 @@ header{
     padding: 14px 16px;
     display: flex;
     align-items: center;
+    border: 1px solid #EDE7F6;
 }
 .chat__search{
     background: #FAFAFA;
@@ -2062,12 +2063,13 @@ body > div.content-container > div.container-layout > div.payroll__search--conta
 .upload__employee--img{
     margin-left: 32px;
 }
-#employee-content > div:nth-child(1) > div.employee__content--container > div.employee__profile--img > div > div{
+#employee-content > div:nth-child(1) > div.employee__content--container > div.employee__profile--img > div > button{
     padding: 10px 16px;
     border: 1px solid #F16532;
     border-radius: 4px;
     display: flex;
     align-items: center;
+    background: transparent;
 }
 #employee-content > div:nth-child(1) > div.employee__content--container > div.employee__profile--img > div > div > i{
     color: var(--red-color);
@@ -2375,11 +2377,18 @@ body > div.content-container > div > div.new__listing > div > div:nth-child(7) >
     padding-left: 35px;
     margin-bottom: 2px;
     cursor: pointer;
-    font-size: 22px;
+    /*font-size: 22px;*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
 }
 
 /* Hide the browser's default checkbox */
@@ -3082,4 +3091,20 @@ input::placeholder{
 }
 .page__count{
     cursor: pointer;
+}
+#payroll-nav > div.row > div.col-lg-5 > div > div > button > svg{
+    margin-right: 14px;
+}
+.action__link{
+    text-decoration: none;
+    color: inherit;
+}
+body > div.content-container > div > div.new__listing > div.listing__submit > div > button.cancel__btn > svg{
+    margin-right: 14px;
+}
+body > div.content-container > div > div.new__listing > div.listing__submit > div > button.save__btn > svg{
+    margin-right: 14px;
+}
+#dropdown > svg{
+    margin-left: -22px;
 }
