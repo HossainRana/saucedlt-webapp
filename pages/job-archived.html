@@ -24,13 +24,10 @@
     <script src="../resources/js/jquery.min.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
     <script src="../resources/js/bootstrap.bundle.min.js"></script>
-    <script src="../resources/js/chat.js"></script>
     <script src="../resources/js/site.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
-    <title>Message</title>
+    <title>Job Active</title>
 </head>
 <body>
-<!--Header Section-->
 <!--Header Section-->
 <header>
     <div class="menu__bar" id="navBar">
@@ -95,7 +92,7 @@
                 </a>
             </li>
             <li class="each__menu--item">
-                <a class="sidebar__active" href="all-employees.html">
+                <a href="all-employees.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     Employees
                 </a>
@@ -114,18 +111,18 @@
                     />
                 </svg>
             </li>
-            <li class="dropdown__menu--items menu__show position-relative" id="dropdownMenu">
+            <li class="dropdown__menu--items position-relative" id="dropdownMenu">
                 <div class="position-absolute left__border--line"></div>
                 <ul>
                     <li class="dropdown__menu--item">
                         <span><a href="./job-active.html">Active</a></span>
                     </li>
                     <li class="dropdown__menu--item">
-                        <span><a href="#">Draft</a></span>
+                        <span><a href="./job-draft.html">Draft</a></span>
                     </li>
                     </li>
-                    <li class="dropdown__menu--item">
-                        <span><a href="#">Archived</a></span>
+                    <li class="dropdown__menu--item sidebar__active">
+                        <span><a href="./job-archived.html">Archived</a></span>
                     </li>
                 </ul>
             </li>
@@ -152,13 +149,15 @@
 </div>
 <div class="content-container">
     <div class="container-layout">
-        <div class="chat__container">
-            <h3 class="chat__container--heading">Chat</h3>
-            <div class="chat__inner--layout">
-                <div class="row m-0 flex-nowrap">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="left__chathead--container">
-                            <div class="chat__search">
+
+        <!--Search Action-->
+
+        <div class="payroll__search--container">
+            <div class="row m-0 justify-content-between">
+                <div class="col-lg-9 col-md-12 col-12">
+                    <div class="row m-0">
+                        <div class="col-lg-12 col-md-12 col-10 p-0">
+                            <div class="payroll__search">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.33326 7.33326H7.8066L7.61993 7.15326C8.41993 6.21993 8.83326 4.9466 8.6066 3.59326C8.29326 1.73993 6.7466 0.259929 4.87993 0.0332621C2.05993 -0.313405 -0.313405 2.05993 0.0332621 4.87993C0.259929 6.74659 1.73993 8.29326 3.59326 8.6066C4.9466 8.83326 6.21993 8.41993 7.15326 7.61993L7.33326 7.80659V8.33326L10.1666 11.1666C10.4399 11.4399 10.8866 11.4399 11.1599 11.1666C11.4333 10.8933 11.4333 10.4466 11.1599 10.1733L8.33326 7.33326ZM4.33326 7.33326C2.67326 7.33326 1.33326 5.99326 1.33326 4.33326C1.33326 2.67326 2.67326 1.33326 4.33326 1.33326C5.99326 1.33326 7.33326 2.67326 7.33326 4.33326C7.33326 5.99326 5.99326 7.33326 4.33326 7.33326Z"
@@ -166,140 +165,130 @@
                                 </svg>
                                 <input type="text" name="search" id="payroll-search" placeholder="Search...">
                             </div>
-                            <div class="chat__border--bottom"></div>
-                            <h4>Staff</h4>
-                            <div class="chat__head--container">
-                                <div class="each__chat--head active__chat--head">
-                                    <div class="chat__head--img">
-                                        <img src="../resources/images/chat/chat-user-1.png" class="img-fluid" alt="chat-user">
-                                    </div>
-                                    <div class="chat__head--details">
-                                        <div class="chat__head--name">Louie Mcgee</div>
-                                        <div class="chat__head--msg">Nullla malessuada nunc...</div>
-                                    </div>
-                                    <div class="chat__head--time">
-                                        <div class="chat__head--count">01</div>
-                                        <div class="chat__head--timed">2:48 AM</div>
-                                    </div>
-                                </div>
-                                <div class="each__chat--head">
-                                    <div class="chat__head--img">
-                                        <img src="../resources/images/chat/chat-user-2.png" class="img-fluid" alt="chat-user">
-                                    </div>
-                                    <div class="chat__head--details">
-                                        <div class="chat__head--name">Liam Collins</div>
-                                        <div class="chat__head--msg">Nullla malessuada nunc...</div>
-                                    </div>
-                                    <div class="chat__head--time">
-                                        <div class="chat__head--count"></div>
-                                        <div class="chat__head--timed">2:48 AM</div>
-                                    </div>
-                                </div>
-                                <div class="each__chat--head">
-                                    <div class="chat__head--img">
-                                        <img src="../resources/images/chat/chat-user-3.png" class="img-fluid" alt="chat-user">
-                                    </div>
-                                    <div class="chat__head--details">
-                                        <div class="chat__head--name">Makenna Dorwart</div>
-                                        <div class="chat__head--msg">Nullla malessuada nunc...</div>
-                                    </div>
-                                    <div class="chat__head--time">
-                                        <div class="chat__head--count"></div>
-                                        <div class="chat__head--timed">2:48 AM</div>
-                                    </div>
-                                </div>
-                                <div class="each__chat--head">
-                                    <div class="chat__head--img">
-                                        <img src="../resources/images/chat/chat-user-4.png" class="img-fluid" alt="chat-user">
-                                    </div>
-                                    <div class="chat__head--details">
-                                        <div class="chat__head--name">Randy Bergson</div>
-                                        <div class="chat__head--msg">Nullla malessuada nunc...</div>
-                                    </div>
-                                    <div class="chat__head--time">
-                                        <div class="chat__head--count"></div>
-                                        <div class="chat__head--timed">2:48 AM</div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-5 message__main message__width ">
-                        <div class="center__message--container">
-                            <div class="message__container--header">
-                                <div class="message__header--profile">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                                    <div class="d-flex align-items-center" id="profileToggle">
-                                        <img src="../resources/images/chat/chat-user-1.png" class="img-fluid" alt="message-profile">
-                                        <label class="chat__label">Louie Mcgee</label>
-                                        <span class="active__status-circle chat__two"></span>
-                                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 col-12 mt-lg-0 mt-sm-4">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-lg-12 col-md-12 col-12 ps-0">
+                            <a href="./new-listing.html">
+                                <div class="btn__jobs">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    Add
                                 </div>
-                            </div>
-                            <div class="chat__border--bottom"></div>
-                            <div class="message__container--messages">
-                                <div class="each__message--d left__message">
-                                    <p>Laboris non ad et aute sint aliquip mollit voluptate velit dolore magna fugiat ex. Voluptate amet aute deserunt tempor non laboris cillum.</p>
-                                    <p>11:23 AM</p>
-                                </div>
-                                <div class="each__message--d right__message">
-                                    <p>Laboris non ad et aute sint aliquip mollit voluptate velit dolore magna fugiat ex. Voluptate amet aute deserunt tempor non laboris cillum.</p>
-                                    <p>11:23 AM</p>
-                                </div>
-                                <div class="each__message--d left__message">
-                                    <p>Laboris non ad et aute sint aliquip mollit voluptate velit dolore magna fugiat ex. Voluptate amet aute deserunt tempor non laboris cillum.</p>
-                                    <p>11:23 AM</p>
-                                </div>
-                                <div class="each__message--d right__message">
-                                    <p>Laboris non ad et aute sint a</p>
-                                    <p>11:23 AM</p>
-                                </div>
-                                <div class="each__message--d left__message">
-                                    <p>Laboris non ad et aute sint aliquip mollit voluptate velit dolore magna </p>
-                                    <p>11:23 AM</p>
-                                </div>
-                                <div class="each__message--d right__message">
-                                    <p>Laboris non ad et aute sint a</p>
-                                    <p>11:23 AM</p>
-                                </div>
-                            </div>
-                            <div class="chat__border--bottom"></div>
-                            <div class="message__send--container">
-                                <div class="message__input">
-                                    <button class="chat__imo">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
-                                    </button>
-                                    <input type="text" placeholder="Type a Message">
-                                </div>
-                                <div class="message__send">
-                                    <span class="message__send--border"></span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                </div>
-                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="payroll__table--container">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="all-payroll" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <h3 class="table__heading">3 Archived Jobs</h3>
+                    <table class="table table-borderless payroll__table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Name of Role</th>
+                            <th scope="col">Date posted</th>
+                            <th scope="col">Views</th>
+                            <th scope="col">Applications</th>
+                            <th scope="col">Shortlist</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label class="checkbox__container">Barista
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>14 July 2021</td>
+                            <td>26</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td class="d-flex">
+                                <div class="action__btn recent__invitation">
+                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
+                                              fill="#F16532"/>
+                                    </svg>
+                                    <div class="invitation__recent--container">
+                                        <ul>
+                                            <li>Edit</li>
+                                            <li>Delete</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox__container">Head Chef
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>14 July 2021</td>
+                            <td>79</td>
+                            <td>23</td>
+                            <td>2</td>
+                            <td class="d-flex">
+                                <div class="action__btn">
+                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
+                                              fill="#F16532"/>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="checkbox__container">Head of Operations
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>14 July 2021</td>
+                            <td>98</td>
+                            <td>52</td>
+                            <td>1</td>
+                            <td class="d-flex">
+                                <div class="action__btn">
+                                    <svg  width="24" height="24" viewBox="0 0 14 4" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.99992 0.333496C1.08325 0.333496 0.333252 1.0835 0.333252 2.00016C0.333252 2.91683 1.08325 3.66683 1.99992 3.66683C2.91659 3.66683 3.66659 2.91683 3.66659 2.00016C3.66659 1.0835 2.91659 0.333496 1.99992 0.333496ZM11.9999 0.333496C11.0833 0.333496 10.3333 1.0835 10.3333 2.00016C10.3333 2.91683 11.0833 3.66683 11.9999 3.66683C12.9166 3.66683 13.6666 2.91683 13.6666 2.00016C13.6666 1.0835 12.9166 0.333496 11.9999 0.333496ZM6.99992 0.333496C6.08325 0.333496 5.33325 1.0835 5.33325 2.00016C5.33325 2.91683 6.08325 3.66683 6.99992 3.66683C7.91658 3.66683 8.66658 2.91683 8.66658 2.00016C8.66658 1.0835 7.91658 0.333496 6.99992 0.333496Z"
+                                              fill="#F16532"/>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom__pagination--container">
+                        <div class="page__number">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <span class="page__count page__fill">01</span>
+                            <span class="page__count">02</span>
+                            <span class="page__count">03</span>
+                            <span>...</span>
+                            <span class="page__count">24</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </span>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 profile__toggle chat__profile">
-                        <div class="right__user--profile">
-                            <div class="user__profile--thumb">
-                                <img src="../resources/images/chat/thumb-user.png" class="img-fluid" alt="user thumbnail">
-                                <h2>Louie Mcgee</h2>
-                                <h3>Barista</h3>
-                            </div>
-                            <div class="user__profile--info">
-                                <h4>Information</h4>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                    Role:&nbsp;Barista
-                                </p>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                    Team:&nbsp;Ground Team
-                                </p>
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                                    04&nbsp;135&nbsp;461&nbsp;32
-                                </p>
+                        <div class="row__number">
+                            <div class="chart__top--right">
+                                <select name="day">
+                                    <option selected value="0">10 Rows</option>
+                                    <option value="1">20 Rows</option>
+                                    <option value="2">30 Rows</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -307,6 +296,11 @@
             </div>
         </div>
     </div>
+
+
+    <!--            Footer          -->
+
+
     <footer>
         <div class="footer__container">
             <div class="footer__menu--container">
@@ -325,5 +319,6 @@
         </div>
     </footer>
 </div>
+
 </body>
 </html>

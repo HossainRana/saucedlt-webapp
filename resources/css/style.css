@@ -1361,7 +1361,7 @@ header{
     font-size: 14px;
     line-height: 20px;
     color: #F16532;
-    padding: 12px 14px;
+    padding: 12px 10px;
     width: fit-content;
     border: 1px solid #F16532;
     border-radius: 4px;
@@ -1619,6 +1619,7 @@ header{
     display: flex;
     align-items: center;
     display: none;
+    z-index: 1;
 }
 .visa__status--container{
     left: -29px;
@@ -2623,6 +2624,7 @@ input::placeholder{
     align-items: center;
     justify-content: space-between;
     padding: 7px;
+    cursor: pointer;
 }
 .each__chat--head:not(:last-child){
     margin-bottom: 12px;
@@ -3107,4 +3109,16 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
 }
 #dropdown > svg{
     margin-left: -22px;
+}
+
+@media (max-width: 768px) {
+    td{
+        padding: 0 20px;
+    }
+}
+.chat__imo{
+    width: fit-content;
+    background: transparent;
+    border: none;
+    outline: none;
 }

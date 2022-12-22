@@ -44,4 +44,12 @@ $(document).ready(function (){
         add.removeClass('page__fill')
         $(this).addClass('page__fill')
     })
+
+    if(document.querySelector('.chat__head--container')){
+        $('.each__chat--head').click(function (){
+            console.log('this');
+            $('.each__chat--head').removeClass('active__chat--head');
+            $(this).addClass('active__chat--head');
+        })
+    }
 })
