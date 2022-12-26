@@ -53,13 +53,20 @@ $(document).ready(function (){
         })
     }
 
-    if (document.querySelector('.job__list')){
+    if (document.querySelector('.job__listings')){
         document.querySelectorAll('.action__btn').forEach(function (e) {
             e.addEventListener('click', function (el){
-                if (el.target.classList.contains('job__list')){
+                if (el.target.classList.contains('job__listings')){
                     el.target.classList.toggle('job__action--btn');
                 }
             })
+        })
+
+        window.addEventListener('click', function (e){
+            if (!e.target.classList.contains('job__listings')){
+                console.log('yes')
+                document.querySelector('.job__listings').classList.remove('job__action--btn');
+            }
         })
 
         // document.querySelectorAll('.svg__action').forEach(function (e) {
@@ -70,4 +77,16 @@ $(document).ready(function (){
         // })
     }
 
+    var profileMenu22 = document.getElementById("account");
+    profileMenu22.addEventListener('click', function (){
+        var menuList2 = document.getElementById("profileMenu2");
+        menuList2.classList.toggle("drop-show");
+    })
+
+    document.querySelector('.li__one').addEventListener('click', function (){
+        document.querySelector('.header__profile').innerHTML='Account Profile'
+    })
+    document.querySelector('.li__two').addEventListener('click', function (){
+        document.querySelector('.header__profile').innerHTML='Own Profile'
+    })
 })

@@ -30,7 +30,7 @@ $(document).ready(function (){
                 ]
             }, {
                 label: 'Loss',
-                backgroundColor: "##2196F3",
+                backgroundColor: "#2196F3",
                 data: [140,
                     50,
                     156,
