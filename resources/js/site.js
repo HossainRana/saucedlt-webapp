@@ -85,10 +85,14 @@ $(document).ready(function (){
         })
 
         document.querySelector('.li__one').addEventListener('click', function (){
-            document.querySelector('.header__profile').innerHTML='Account Profile'
+            document.querySelector('.header__profile').innerHTML='Account Profile';
+            var menuList2 = document.getElementById("profileMenu2");
+            menuList2.classList.toggle("drop-show");
         })
         document.querySelector('.li__two').addEventListener('click', function (){
-            document.querySelector('.header__profile').innerHTML='Own Profile'
+            document.querySelector('.header__profile').innerHTML='Own Profile';
+            var menuList2 = document.getElementById("profileMenu2");
+            menuList2.classList.toggle("drop-show");
         })
     }
 })
