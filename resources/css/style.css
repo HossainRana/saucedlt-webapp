@@ -700,7 +700,7 @@ header{
 
 .input__group--container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .input__group--container input{
@@ -711,7 +711,7 @@ header{
     border: navajowhite;
     text-align: center;
     outline: none;
-    margin: 0 12px;
+    /*margin: 0 12px;*/
 }
 
 
