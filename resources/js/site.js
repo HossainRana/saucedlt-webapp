@@ -77,16 +77,18 @@ $(document).ready(function (){
         // })
     }
 
-    var profileMenu22 = document.getElementById("account");
-    profileMenu22.addEventListener('click', function (){
-        var menuList2 = document.getElementById("profileMenu2");
-        menuList2.classList.toggle("drop-show");
-    })
+    if(document.getElementById("account")){
+        var profileMenu22 = document.getElementById("account");
+        profileMenu22.addEventListener('click', function (){
+            var menuList2 = document.getElementById("profileMenu2");
+            menuList2.classList.toggle("drop-show");
+        })
 
-    document.querySelector('.li__one').addEventListener('click', function (){
-        document.querySelector('.header__profile').innerHTML='Account Profile'
-    })
-    document.querySelector('.li__two').addEventListener('click', function (){
-        document.querySelector('.header__profile').innerHTML='Own Profile'
-    })
+        document.querySelector('.li__one').addEventListener('click', function (){
+            document.querySelector('.header__profile').innerHTML='Account Profile'
+        })
+        document.querySelector('.li__two').addEventListener('click', function (){
+            document.querySelector('.header__profile').innerHTML='Own Profile'
+        })
+    }
 })

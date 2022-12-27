@@ -1614,8 +1614,8 @@ header{
     position: absolute;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    left: -82px;
-    top: 49px;
+    left: -76px;
+    top: 42px;
     display: flex;
     align-items: center;
     display: none;
@@ -2970,7 +2970,7 @@ input::placeholder{
     display: block !important;
 }
 .recent__invitation:hover .invitation__recent--container{
-    /*display: block !important;*/
+    display: block !important;
 }
 .action__btn-application:hover .application__action--option{
     display: block !important;
@@ -2979,7 +2979,7 @@ input::placeholder{
     /*left: -20px;*/
 }
 #pending-payroll > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
-    left: -20px;
+    /*left: -20px;*/
 }
 #uploaded-payroll > table > tbody > tr:nth-child(1) > td.d-flex > div > div{
     left: -20px;
@@ -3197,4 +3197,7 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
 }
 .drop-show{
     display: none;
+}
+.td__dfv tr td{
+    width: 14%;
 }
