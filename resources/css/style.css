@@ -11,6 +11,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-ms-reveal {
+    display: none
+}
 .left__menu--items::-webkit-scrollbar{
     display: none;
 }
@@ -29,13 +32,51 @@ header{
     height: 100%;
 }
 .header__business--profile{
-    display: flex;
-    align-items: center;
     margin-left: 260px;
     border: 1px solid #f3e1e1;
     border-radius: 20px;
     padding: 5px 12px;
     width: 240px;
+}
+.header__business--profile button{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__business--profile button::after{
+    content: '\003E';
+    border: 0 !important;
+    transform: rotate(90deg);
+    color: #F6ECE1;
+}
+.header__business--profile ul{
+    padding: 12px 14px;
+    width: 212px;
+}
+.header__business--profile ul li svg{
+    margin-right: 14px;
+}
+.header__business--profile ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+.header__business--profile ul li .dropdown-item{
+    width: fit-content !important;
+    padding: 0 !important;
+}
+.header__business--profile ul li a{
+    text-decoration: none;
+    color: var(--red-color);
+    background: transparent;
+}
+.header__business--profile ul li a:hover,
+.header__business--profile ul li a:active{
+    background: none;
+    color: initial;
 }
 .header__business--profile i{
     font-size: 24px;
@@ -3200,4 +3241,28 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
 }
 .td__dfv tr td{
     width: 14%;
+}
+.list__action--btn{
+    outline: none;
+    background: transparent;
+    padding: 12px 16px;
+    border: 1px solid #F16532;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.list__action--btn:hover{
+    background: var(--red-color);
+}
+.list__action--btn:hover svg path{
+    fill: #ffffff;
+}
+.list__action--btn::after{
+    content: '';
+    display: none !important;
+}
+.list__action--btn:focus{
+    background: var(--red-color);
+}
+.list__action--btn:focus svg path{
+    fill: #ffffff;
 }

@@ -27,6 +27,7 @@
     <script src="../resources/js/dashboard.js"></script>
     <script src="../resources/js/site.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+
     <title>Saucedlt | Dashboard</title>
 </head>
 <body>
@@ -38,27 +39,25 @@
         <div class="line-three"></div>
     </div>
     <div class="header__profile--container">
-        <div class="header__business--profile" id="account">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-            <div>
-                <h2 class="header__profile">Business Profiles</h2>
-                <p>Cracker JAck Hospitality</p>
-            </div>
-            <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.59 0.593018L6 5.17302L1.41 0.593018L0 2.00302L6 8.00302L12 2.00302L10.59 0.593018Z"
-                      fill="#F6ECE1"/>
-            </svg>
+        <div class="dropdown header__business--profile">
+            <button class="dropdown-toggle" type="button" id="headerdropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>
+                    <h2 class="header__profile">Business Profiles</h2>
+                    <p>Cracker JAck Hospitality</p>
+                </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="headerdropdown">
+                <li><a class="dropdown-item li__one" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Account Profile</span>
+                </a></li>
+                <li><a class="dropdown-item li__two" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Own Profile</span>
+                </a></li>
+            </ul>
         </div>
-        <ul class="profile-dropdown drop-show" id="profileMenu2">
-            <li class="li__one">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <a href="#">Account Profile</a>
-            </li>
-            <li class="li__two">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F16532" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <a href="#">Own Profile</a>
-            </li>
-        </ul>
         <div class="header__right--container">
             <div class="chat__notification">
                 <a href="./chat.html">
@@ -292,5 +291,7 @@
         </div>
     </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-
+beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

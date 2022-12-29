@@ -77,13 +77,7 @@ $(document).ready(function (){
         // })
     }
 
-    if(document.getElementById("account")){
-        var profileMenu22 = document.getElementById("account");
-        profileMenu22.addEventListener('click', function (){
-            var menuList2 = document.getElementById("profileMenu2");
-            menuList2.classList.toggle("drop-show");
-        })
-
+    if(document.getElementById("headerdropdown")){
         document.querySelector('.li__one').addEventListener('click', function (){
             document.querySelector('.header__profile').innerHTML='Account Profile';
             var menuList2 = document.getElementById("profileMenu2");
@@ -95,4 +89,5 @@ $(document).ready(function (){
             menuList2.classList.toggle("drop-show");
         })
     }
+
 })
