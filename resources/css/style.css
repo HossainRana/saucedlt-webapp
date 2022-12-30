@@ -3266,3 +3266,19 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
 .list__action--btn:focus svg path{
     fill: #ffffff;
 }
+.nav__profile--ul{
+    padding: initial !important;
+    margin: 0 !important;
+}
+.nav__profile--ul li{
+    list-style: none;
+    margin-bottom: 0!important;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F16532;
+    margin-left: 14px;
+}
