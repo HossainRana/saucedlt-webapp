@@ -3282,3 +3282,16 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
     color: #F16532;
     margin-left: 14px;
 }
+
+.nav__profile--ul p{
+    list-style: none;
+    margin-bottom: 0!important;
+
+    font-family: 'Qanelas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F16532;
+    margin-left: 14px;
+}
