@@ -3304,3 +3304,53 @@ body > div.content-container > div > div.new__listing > div.listing__submit > di
     color: #F16532;
     margin-left: 14px;
 }
+
+/*Toaster Button*/
+.toaster__container,
+.progress__bar--container{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.success__toaster--btn{
+    border: none;
+    border-radius: 4px;
+    padding: 12px 28px;
+    outline: none;
+    font-family: "Qanelas";
+    font-weight: 500;
+    font-size: 14px;
+    background: darkolivegreen;
+    color: #ffffff;
+}
+.danger__toaster--btn{
+    border: none;
+    border-radius: 4px;
+    padding: 12px 28px;
+    outline: none;
+    font-family: "Qanelas";
+    font-weight: 500;
+    font-size: 14px;
+    background: var(--red-color);
+    color: #ffffff;
+}
+.toast-body{
+    color: #ffffff;
+    background-color: rgba(85, 107, 47, 0.87);
+}
+.toast__body--danger{
+    color: #ffffff;
+    background-color: var(--red-color);
+}
+.toaster__z--index{
+    z-index: 99999;
+}
+.progress__bar--container .sr-only{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
